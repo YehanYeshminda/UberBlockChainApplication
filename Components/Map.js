@@ -15,10 +15,10 @@ const Map = () => {
 		const map = new mapboxgl.Map({
 			container: 'map',
 			style: 'mapbox://styles/yehannnn/cl35elovv000514qn850arl7g',
-			center: [82.026177, 7.577576],
-			zoom: 6.7,
+			center: [81.434, 7.724],
+			zoom: 6,
 		});
-	}, [,]);
+	}, []);
 
 	return <div className={style.wrapper} id="map" />;
 };
