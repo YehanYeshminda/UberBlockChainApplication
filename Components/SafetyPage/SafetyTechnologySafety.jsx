@@ -1,8 +1,8 @@
 import React from 'react';
-import PhonecallImg from '../temp/phonecall.jpg';
+import PhonecallImg from '../../temp/phonecall.jpg';
 import Image from 'next/image';
 
-const TechnologySafety = () => {
+const SafetyTechnologySafety = () => {
 	const style = {
 		gridSectionSet: `grid grid-cols-2 pt-[100px] max-w-[1250px] m-auto`,
 		// boxOne: `m-[1rem]`,
@@ -45,4 +45,4 @@ const TechnologySafety = () => {
 	);
 };
 
-export default TechnologySafety;
+export default SafetyTechnologySafety;

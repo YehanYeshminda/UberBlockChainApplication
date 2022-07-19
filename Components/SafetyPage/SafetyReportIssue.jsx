@@ -1,12 +1,12 @@
 import React from 'react';
-import AndersonImg from '../temp/AndersonImg.jpg';
+import reportIssue from '../../temp/report.jpg';
 import Image from 'next/image';
 
-const GridSectionAnderson = () => {
+const SafetyReportIssue = () => {
 	const style = {
 		gridSectionSet: `grid grid-cols-2 pt-[100px] max-w-[1250px] m-auto`,
 		// boxOne: `m-[1rem]`,
-		textInsideGrid: `mt-[2.2rem] ml-[2.6rem] text-[1.5rem]`,
+		textInsideGrid: `mt-[5rem] ml-[2.6rem] text-[1.5rem]`,
 		headerText: `text-[2.5rem] pb-[20px] leading-[1.2]`,
 		insideBr: 'block mg-[10px]',
 		paraInsideGrid: `text-[1.1rem]`,
@@ -19,27 +19,21 @@ const GridSectionAnderson = () => {
 		<div className={style.gridSectionSet}>
 			<div className={style.boxTwo}>
 				<div className={style.ImageStylingSet}>
-					<Image src={AndersonImg} />
+					<Image src={reportIssue} />
 				</div>
 			</div>
 			<div className={style.boxOne}>
 				<div className={style.textInsideGrid}>
 					<h1 className={style.headerText}>
-						All drivers are background checked before their first{' '}
-						<span className={style.insideBr}>trip</span>
+						You have our support, whenever you need it
+						<span className={style.insideBr}></span>
 					</h1>
 
 					<div>
 						<p className={style.paraInsideGrid}>
-							We want you to move freely, make the most of your time, and be
-							connected to the people and places that matter most to you.
-						</p>
-
-						<p className={style.paraInsideGrid}>
-							That’s why we’re committed to safety—from the creation of new
-							standards to the development of technology with the aim of
-							reducing incidents.
-							<span className={style.insideBr}> </span>
+							Uber support is available 24 hours a day, 7 days a week, and is
+							handled by a team of trained safety agents. If you’re in immediate
+							danger, you should always contact authorities first.
 						</p>
 					</div>
 				</div>
@@ -48,4 +42,4 @@ const GridSectionAnderson = () => {
 	);
 };
 
-export default GridSectionAnderson;
+export default SafetyReportIssue;

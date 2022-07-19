@@ -1,10 +1,10 @@
 import React from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
-import AboutusHeader from '../Components/AboutusHeader';
-import ReimagineOurLifeComponent from '../Components/ReimagineOurLifeComponent';
-import GridCompDouble from '../Components/GridCompDouble';
-import ContainerLastSectionImageSet from '../Components/containerLastSectionImageSet';
+import AboutusHeaderWomen from '../Components/AboutusPage/AboutusHeaderWomen';
+import AboutusReimagineOurLifeComponent from '../Components/AboutusPage/AboutusReimagineOurLifeComponent';
+import AboutusGridCompDouble from '../Components/AboutusPage/AboutusGridCompDouble';
+import AboutusContainerLastSectionImageSet from '../Components/AboutusPage/AboutusContainerLastSectionImageSet';
 
 const style = {
 	wrapper: `h-screen w-screen flex flex-col`,
@@ -18,14 +18,14 @@ const Aboutus = () => {
 			<div className={style.wrapper}>
 				<Navbar />
 				<div className={style.main}>
-					<AboutusHeader />
+					<AboutusHeaderWomen />
 					<div className={style.setWrapperSize}>
-						<ReimagineOurLifeComponent />
+						<AboutusReimagineOurLifeComponent />
 						<div>
-							<GridCompDouble />
+							<AboutusGridCompDouble />
 						</div>
 					</div>
-					<ContainerLastSectionImageSet />
+					<AboutusContainerLastSectionImageSet />
 					<Footer />
 				</div>
 			</div>

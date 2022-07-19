@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TextBelowSetSafety = () => {
+const SafetyTextBelowSetSafety = () => {
 	const style = {
 		textSectionLast: `mt-[6rem] mb-[4rem]`,
 		pSet: `text-[1rem] mt-5`,
@@ -24,4 +24,4 @@ const TextBelowSetSafety = () => {
 	);
 };
 
-export default TextBelowSetSafety;
+export default SafetyTextBelowSetSafety;

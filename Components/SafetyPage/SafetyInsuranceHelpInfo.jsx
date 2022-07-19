@@ -1,8 +1,8 @@
 import React from 'react';
-import framersImg from '../temp/framers.jpg';
+import framersImg from '../../temp/framers.jpg';
 import Image from 'next/image';
 
-const InsuranceSafety = () => {
+const SafetyInsuranceHelpInfo = () => {
 	const style = {
 		gridSectionSet: `grid grid-cols-2 pt-[100px] max-w-[1250px] m-auto`,
 		// boxOne: `m-[1rem]`,
@@ -46,4 +46,4 @@ const InsuranceSafety = () => {
 	);
 };
 
-export default InsuranceSafety;
+export default SafetyInsuranceHelpInfo;

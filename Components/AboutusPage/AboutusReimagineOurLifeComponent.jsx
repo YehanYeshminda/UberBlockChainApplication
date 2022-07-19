@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ReimagineOurLifeComponent = () => {
+const AboutusReimagineOurLifeComponent = () => {
 	const style = {
 		reimagineLifeSection: `text-start`,
 		headerInsideReimagineLife: `text-[35px] mb-[20px] leading-10`,
@@ -28,4 +28,4 @@ const ReimagineOurLifeComponent = () => {
 	);
 };
 
-export default ReimagineOurLifeComponent;
+export default AboutusReimagineOurLifeComponent;

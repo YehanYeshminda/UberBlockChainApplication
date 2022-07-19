@@ -1,14 +1,14 @@
 import React from 'react';
-import GridSectionOne from '../Components/GridSectionOne';
-import GridSectionTwoSafety from '../Components/GridSectionTwoSafety';
+import SafetyGridSection from '../Components/SafetyPage/SafetyGridSection';
+import SafetyGridSectionTwo from '../Components/SafetyPage/SafetyGridSectionTwo';
 import Navbar from '../Components/Navbar';
-import GridSectionAnderson from '../Components/GridSectionAnderson';
-import EmergencyHelpSafety from '../Components/EmergencyHelpSafety';
-import TechnologySafety from '../Components/TechnologySafety';
-import InsuranceSafety from '../Components/InsuranceSafety';
-import ReportIssue from '../Components/ReportIssue';
-import PersonalDetails from '../Components/PersonalDetails';
-import TextBelowSetSafety from '../Components/TextBelowSetSafety';
+import SafectyGridSectionInfo from '../Components/SafetyPage/SafectyGridSectionInfo';
+import SafetyEmergencyHelpInfo from '../Components/SafetyPage/SafetyEmergencyHelpInfo';
+import SafetyTechnologySafety from '../Components/SafetyPage/SafetyTechnologySafety';
+import SafetyInsuranceHelpInfo from '../Components/SafetyPage/SafetyInsuranceHelpInfo';
+import SafetyReportIssue from '../Components/SafetyPage/SafetyReportIssue';
+import SafetyPersonalDetails from '../Components/SafetyPage/SafetyPersonalDetails';
+import SafetyTextBelowSetSafety from '../Components/SafetyPage/SafetyTextBelowSetSafety';
 import Footer from '../Components/Footer';
 
 const Safety = () => {
@@ -20,15 +20,15 @@ const Safety = () => {
 		<div>
 			<Navbar />
 			<div className={style.wrapper}>
-				<GridSectionOne />
-				<GridSectionTwoSafety />
-				<GridSectionAnderson />
-				<EmergencyHelpSafety />
-				<TechnologySafety />
-				<InsuranceSafety />
-				<ReportIssue />
-				<PersonalDetails />
-				<TextBelowSetSafety />
+				<SafetyGridSection />
+				<SafetyGridSectionTwo />
+				<SafectyGridSectionInfo />
+				<SafetyEmergencyHelpInfo />
+				<SafetyTechnologySafety />
+				<SafetyInsuranceHelpInfo />
+				<SafetyReportIssue />
+				<SafetyPersonalDetails />
+				<SafetyTextBelowSetSafety />
 			</div>
 			<Footer />
 		</div>

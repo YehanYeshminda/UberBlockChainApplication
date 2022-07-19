@@ -1,8 +1,8 @@
 import React from 'react';
-import HeaderImage from '../temp/headerSafety.jpg';
+import SafetyWomen from '../../temp/headerSafety.jpg';
 import Image from 'next/image';
 
-const GridSectionOne = () => {
+const SafetyGridSection = () => {
 	const style = {
 		gridSectionSet: `grid grid-cols-2 pt-[100px] gap-x-[30px]`,
 		// boxOne: `m-[1rem]`,
@@ -33,10 +33,10 @@ const GridSectionOne = () => {
 				</div>
 			</div>
 			<div className={style.boxTwo}>
-				<Image src={HeaderImage} />
+				<Image src={SafetyWomen} alt="Safety image " />
 			</div>
 		</div>
 	);
 };
 
-export default GridSectionOne;
+export default SafetyGridSection;

@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import AboutusHeaderImg from '../temp/AboutusHeader.jpeg';
+import AboutusHeaderImg from '../../temp/AboutusHeader.jpeg';
 
-const AboutusHeader = () => {
+const AboutusHeaderWomen = () => {
 	const style = {
 		imgHeaderWrapper: `relative center text-white`,
 		containerImg: 'h-[600px]',
@@ -23,4 +23,4 @@ const AboutusHeader = () => {
 	);
 };
 
-export default AboutusHeader;
+export default AboutusHeaderWomen;

@@ -3,7 +3,7 @@ import { FaHeadSideMask } from 'react-icons/fa';
 import { RiWheelchairFill } from 'react-icons/ri';
 import { AiFillMail } from 'react-icons/ai';
 
-const GridSectionTwoSafety = () => {
+const SafetyGridSectionTwo = () => {
 	const style = {
 		gridSectionSet: `grid grid-cols-3 mt-[10rem] gap-x-[20px]`,
 		fontIconSet: `text-[2.7rem] pb-[1.3rem]`,
@@ -70,4 +70,4 @@ const GridSectionTwoSafety = () => {
 	);
 };
 
-export default GridSectionTwoSafety;
+export default SafetyGridSectionTwo;

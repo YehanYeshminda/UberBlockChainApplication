@@ -1,17 +1,17 @@
 import React from 'react';
-import SustainabilityPicture from '../temp/Sustainability.jpg';
-import roadPicture from '../temp/Road.jpg';
-import backgroundShield from '../temp/backgroundShield.png';
-import girlAndBoy from '../temp/girlandboy.jpg';
-import threePeople from '../temp/People3.jpg';
-import personClass from '../temp/personClass.jpg';
-import globalImage from '../temp/globe_background-01.png';
+import SustainabilityPicture from '../../temp/Sustainability.jpg';
+import roadPicture from '../../temp/Road.jpg';
+import backgroundShield from '../../temp/backgroundShield.png';
+import girlAndBoy from '../../temp/girlandboy.jpg';
+import threePeople from '../../temp/People3.jpg';
+import personClass from '../../temp/personClass.jpg';
+import globalImage from '../../temp/globe_background-01.png';
 import Image from 'next/image';
 import { BsFillPeopleFill } from 'react-icons/bs';
 import { BiShapeCircle } from 'react-icons/bi';
 import { FaBullhorn } from 'react-icons/fa';
 
-const GridCompDouble = () => {
+const AboutusGridCompDouble = () => {
 	const style = {
 		gridContentDoubleContent: `grid grid-cols-2 mt-[150px] mb-[100px]`,
 		headerH2: 'text-[35px] ml-[50px] mt-[60px] mb-[15px]',
@@ -167,4 +167,4 @@ const GridCompDouble = () => {
 	);
 };
 
-export default GridCompDouble;
+export default AboutusGridCompDouble;
