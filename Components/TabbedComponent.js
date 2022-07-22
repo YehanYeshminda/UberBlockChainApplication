@@ -3,10 +3,13 @@ import { useState } from 'react';
 
 const TabbedComponent = () => {
 	const style = {
-		container: `flex flex-col relative w-[1200px] h-[400px] break-all mt-[1rem] mb-[3rem]`,
+		container: `flex flex-col relative w-[1200px] max-h-[400px] break-all mt-[1rem] mb-[3rem]`,
 		blockTabs: `flex`,
 		tabs: `p-4 text-center w-6/12 cursor-pointer box-content relative bg-red`,
 		innerGridSet: `grid grid-cols-3`,
+		colInnerSet: `hover:bg-slate-100 hover:transition hover:duration-500 hover:ease-in-out`,
+		innerHeaderStyles: `ml-[2rem]`,
+		pTagReset: `h-[10px]`,
 	};
 
 	const [toggleState, setToggleState] = useState(1);
@@ -42,7 +45,7 @@ const TabbedComponent = () => {
 								<img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_437,h_246/f_auto,q_auto/products/carousel/UberX.png" />
 							</div>
 							<div className={style.innerHeaderStyles}>Zip</div>
-							<p>Affordable, compact rides</p>
+							<p className={style.pTagReset}>Affordable, compact rides</p>
 						</div>
 						<div className={style.colInnerSet}>
 							<div>
