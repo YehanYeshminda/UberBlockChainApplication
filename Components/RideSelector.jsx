@@ -33,11 +33,6 @@ const carList = [
 		imgUrl: uberBlackSuv,
 		multiplier: 2.8,
 	},
-	{
-		service: 'Black SUV',
-		imgUrl: uberBlackSuv,
-		multiplier: 2.8,
-	},
 ];
 
 const basePrice = 1542;

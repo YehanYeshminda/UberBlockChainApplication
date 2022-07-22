@@ -1,0 +1,52 @@
+{
+	"blogs": [
+		{
+			"id": "1",
+			"title": "New commute features and meal delivery are helping companies as they return to the office",
+			"body": "As businesses around the world reimagine everyday work and begin to plan their reopening strategies, they are looking for ways to best support employees—from commuting to socially distanced meetings to the new office meal experience. In every city and state, companies are considering how to make this transition in the near future as seamless and safe as possible. Increasingly, organizations are turning to partners like Uber for Business to help guide their office-return strategy and set up custom commute and meal solutions, so that employees don’t have to leave the office in order to get healthy meals. Whether you’re an essential business with commuting needs today or a business that is planning to return to the office when local guidelines allow for it, Uber for Business provides the tools so that you can plan your strategy. With these burgeoning needs in mind, Uber for Business is rolling out 2 commute-specific solutions over the next few weeks to further support businesses in getting their employees back to the office when they’re ready. Both solutions will launch as pilots in North America, Europe, and the APAC region, including India, before rolling out more broadly later this year. The launches address an increased interest from employers in creating commute programs for their employees around the world who are looking for alternatives to traditional transportation. Since the onset of COVID-19, interest in Uber for Business’ commute programs has nearly doubled. Rideshare solutions that are tailored to company and employee needs, as well as local social distancing guidelines, will play a significant role in how businesses reimagine their commuting experience.",
+			"author": "Uber for Business",
+			"url": "https://uberblogapi.10upcdn.com/1080x547/smart/filters:format(webp)/blogapi.uber.com/wp-content/uploads/2020/09/Workplace-commute-safety-Uber-for-Business-1024x683.jpg",
+			"postedTime": "1/1/2020, 1:01:01 AM"
+		},
+		{
+			"id": "2",
+			"title": "Uber’s real estate VP weighs in on the future of in-office work",
+			"body": "As Uber’s Vice President of Workplace and Real Estate, Michael Huaco is intimately familiar with the challenges of the COVID-19 pandemic. Keeping tabs on Uber’s building projects, helping structure remote employee plans, and navigating the eventual re-opening of offices are just some of the aspects of his job that have been altered by the virus. Regardless of the changes and uncertainty, Huaco views the future of offices as a bright one, which doesn’t necessarily involve going back to exactly the way things were. “We have a real opportunity to fundamentally change the way we work,” he said. We sat down with Huaco to learn about his vision for the future of in-office work, why flexibility is the key to success, and how Uber for Business presents unique employee opportunities. Want to learn more? Register for a free webinar on August 11 at 10 am PST to hear Huaco discuss how top companies are planning their return to work, how COVID-19 has changed commutes, and more.",
+			"author": "Uber for Business",
+			"url": "https://uberblogapi.10upcdn.com/1080x554/smart/filters:format(webp)/blogapi.uber.com/wp-content/uploads/2020/07/UberIM_20072-medium-2-1024x684.jpg",
+			"postedTime": "1/1/2020, 1:01:01 AM"
+		},
+		{
+			"id": "3",
+			"title": "COVID-19: activation information for new drivers and delivery people",
+			"body": "As cities respond to COVID-19, many restaurants are switching to delivery-only, government agencies are trying to resume their operations, and more people are staying home. This means account activation is delayed at this time and it may take longer to get on the road for uber eats partners. If you own a motorbike, you may want to consider delivering with Uber Eats in Colombo & Kandy since you may experience few trip requests from riders if you choose to give rides only. ",
+			"author": "Yehan Yeshminda",
+			"url": "https://uberblogapi.10upcdn.com/1080x547/smart/filters:format(webp)/blogapi.uber.com/wp-content/uploads/2020/04/SignUp3-1-1024x512.jpg",
+			"postedTime": "1/1/2020, 1:01:01 AM"
+		},
+		{
+			"id": "4",
+			"title": "Uber is now available in Colombo",
+			"body": "For the past few weeks, we’ve been urging our riders to stay home so we can support the government in containing the spread of COVID-19. During this time, we’ve focused our efforts to #MoveWhatMatters, such as transporting frontline healthcare workers, assisting citizens access essential services, and delivering essential supplies to thousands of homes.Now, in compliance with government guidelines, we’re resuming our services in the greater Colombo region for essential travel. If you must travel, Uber is ready to serve you starting Monday, May 11, 2020. The government has also directed citizens to step out for essential needs only between 7 am to 7 pm, until further notice. As mandated by the Government, please carry suitable documentation as proof of purpose and show it to the driver before your trip begins. Please note that drivers may cancel trips in the absence of relevant paperwork.",
+			"author": "Yehan Yeshminda",
+			"url": "https://uberblogapi.10upcdn.com/1080x547/smart/filters:format(webp)/blogapi.uber.com/wp-content/uploads/2020/05/RTR_mailer_01-1024x512.png",
+			"postedTime": "1/1/2020, 1:01:01 AM"
+		},
+		{
+			"id": "5",
+			"title": "An update on COVID-19 financial assistance",
+			"body": "The last few weeks have been hard for everyone. But we know they have been particularly tough for drivers and delivery people like you.With Sri Lanka in lockdown, most of your earnings have come to a standstill. In response, we launched a new Work Hub in the Driver app, which can help you find more work opportunities—whether with other Uber services like Uber Eats or, these could even be at another company. We’re also developing resources to help make it easier for you to request financial assistance now available from many governments.If you’re still on the road for services such as Uber Medic, Uber Essentials, you are providing critical services during this period—like getting essential workers to their jobs or getting food to people at home. To help keep you safe, we’ve begun distributing free disinfectants to drivers, and we’ve purchased millions of earloop face masks. Availability is limited, but we’re working hard to get these supplies to drivers, starting with cities in the most need. We also launched COVID-19 Resources, an in-app resource center dedicated to safety information and updates from us.Over the last month, we’ve provided financial assistance to drivers diagnosed with COVID-19 or ordered to self-quarantine or self-isolate by a government public health officer. We moved quickly to announce this policy, even though acting quickly meant moving forward with limited information because we believed the most important thing to do was to provide support as soon as possible. ",
+			"author": "Yehan Yeshminda",
+			"url": "https://uberblogapi.10upcdn.com/1080x547/smart/filters:format(webp)/blogapi.uber.com/wp-content/uploads/2020/04/MSS_7438-copy-1024x684.jpg",
+			"postedTime": "1/1/2020, 1:01:01 AM"
+		},
+		{
+			"id": "6",
+			"title": "Black professionals share their challenges and victories in trucking",
+			"body": "There’s no doubt that trucking is a difficult occupation, but it can also be one of the most rewarding. To celebrate Black History Month, we spoke with Black trucking professionals about some of the challenges they’ve encountered in the industry, how they overcame them, and what they love about their jobs.",
+			"author": "Yehan Yeshminda",
+			"url": "https://uberblogapi.10upcdn.com/1080x547/smart/filters:format(webp)/blogapi.uber.com/wp-content/uploads/2020/02/191206_UF_11-0050-1024x683.jpg",
+			"postedTime": "1/1/2020, 1:01:01 AM"
+		}
+	]
+}

@@ -44,6 +44,12 @@ const Navbar = () => {
 						<Link href="/Aboutus">About us</Link>
 					</button>
 				</div>
+				<div className={style.menuItem}>
+					<button>
+						<Link href="/Blogs">Blogs</Link>
+					</button>
+				</div>
+
 				<div className={style.menuItem}>{'Yehan Yeshminda'.split(' ')[0]}</div>
 				<div className={style.userImageContainer}>
 					<Image
