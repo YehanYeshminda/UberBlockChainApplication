@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import imgGirlPhone from '../temp/womanWithPhone_03.png';
+import imgGirlPhone from '../../temp/womanWithPhone_03.png';
 
 const TravelArounfTheWorldSection = () => {
 	const style = {

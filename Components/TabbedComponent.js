@@ -9,7 +9,7 @@ const TabbedComponent = () => {
 		innerGridSet: `grid grid-cols-3`,
 		colInnerSet: `hover:bg-slate-100 hover:transition hover:duration-500 hover:ease-in-out`,
 		innerHeaderStyles: `ml-[2rem]`,
-		pTagReset: `h-[10px]`,
+		pTagReset: `h-[10px] ml-[30px]`,
 	};
 
 	const [toggleState, setToggleState] = useState(1);
@@ -55,7 +55,7 @@ const TabbedComponent = () => {
 								/>
 							</div>
 							<div className={style.innerHeaderStyles}>Moto</div>
-							<p>Affordable motorcycle rides</p>
+							<p className={style.pTagReset}>Affordable motorcycle rides</p>
 						</div>
 						<div className={style.colInnerSet}>
 							<div>
@@ -65,7 +65,9 @@ const TabbedComponent = () => {
 								/>
 							</div>
 							<div className={style.innerHeaderStyles}>Premier</div>
-							<p>Select sedans, top-rated drivers</p>
+							<p className={style.pTagReset}>
+								Select sedans, top-rated drivers
+							</p>
 						</div>
 					</div>
 				</div>
