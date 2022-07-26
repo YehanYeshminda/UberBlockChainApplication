@@ -6,6 +6,7 @@ const AboutusReimagineOurLifeComponent = () => {
 		headerInsideReimagineLife: `text-[35px] mb-[20px] leading-10`,
 		paraInsideReimagineLife: `text-16px leading-6 w-[60%]`,
 		insideBr: 'block mg-[10px]',
+		contentWrapper: `m-auto w-[1200px]`,
 	};
 
 	return (

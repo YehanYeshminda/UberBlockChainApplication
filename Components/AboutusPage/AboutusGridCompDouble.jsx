@@ -14,13 +14,13 @@ import { motion } from 'framer-motion';
 
 const AboutusGridCompDouble = () => {
 	const style = {
-		gridContentDoubleContent: `grid grid-cols-2 mt-[150px] mb-[100px]`,
+		gridContentDoubleContent: `grid grid-cols-2 mt-[150px] mb-[100px] m-auto w-[1200px]`,
 		headerH2: 'text-[35px] ml-[50px] mt-[60px] mb-[15px]',
 		paraH2Set: `ml-[50px]`,
 		paraInsideDoubleGrid: `w-[90%]`,
 		headerInsideDoubleGrid: `start text-[35px] mt-[75px] mb-[15px]`,
 		subHeaderSet: `text-[35px] mb-[50px]`,
-		companyGridSection: `grid grid-cols-3 max-w-[1100px] gap-x-[30px] mb-[150px]`,
+		companyGridSection: `grid grid-cols-3 max-w-[1300px] gap-x-[30px] mb-[150px] m-auto md:w-[1250px] lg:w-[1200px]`,
 		boxSetH2: `mt-[10px] mb-[10px] text-[25px]`,
 		boxSetP: `start leading-6 text-[17px]`,
 		imgContainer: `w-[350px]`,

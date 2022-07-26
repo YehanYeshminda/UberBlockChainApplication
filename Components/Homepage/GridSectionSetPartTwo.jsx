@@ -8,7 +8,7 @@ import {
 
 const GridSectionSetPartTwo = () => {
 	const style = {
-		gridOptionsSet: `grid grid-cols-3 grid-flow-row auto-rows-max`,
+		gridOptionsSet: `grid grid-cols-3 grid-flow-row auto-rows-max w-[1200px]`,
 		boxHeightOptions: `mb-10 p-10`,
 		fontAwesomeIconTemplateColorSet: `text-[30px] pb-[10px] text-blue-600`,
 		textInsideSuggestions: `text-[25px]`,

@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 const EverywhereTravelSection = () => {
 	const style = {
-		everywhereTravelSectionContainer: `m-[30px]`,
-		gridOptionSetEverywhereTravel: `grid grid-cols-2 gap-[20px]`,
+		everywhereTravelSectionContainer: `m-[30px] w-[1200px]`,
+		gridOptionSetEverywhereTravel: `grid grid-cols-2 gap-[20px] md:h-[500px] lg:[400px]`,
 		subheader: `text-[45px] pb-[20px] mt-[10px]`,
 		subheaderV2Inside: `text-[25px] mt-[15px] mb-[1px]`,
 		insideParaSubHeader: `text-[16px]`,

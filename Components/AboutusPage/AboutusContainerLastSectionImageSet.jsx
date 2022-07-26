@@ -4,7 +4,7 @@ import globalImage from '../../temp/globe_background-01.png';
 
 const AboutusContainerLastSectionImageSet = () => {
 	const style = {
-		containerLastSection: `grid grid-cols-2 bg-[#f6f6f6] max-h-[600px]`,
+		containerLastSection: `grid grid-cols-2 bg-[#f6f6f6] max-h-[600px] m-auto md:w-[1240px] lg:w-full`,
 		textBoxSection: `ml-[200px] mt-[50px] text-[50px]`,
 		imageBoxSection: ``,
 		imageSetter: `h-[600px]`,

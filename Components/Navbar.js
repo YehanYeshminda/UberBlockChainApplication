@@ -4,11 +4,11 @@ import { BsPerson } from 'react-icons/bs';
 import Link from 'next/link';
 
 const style = {
-	wrapper: `h-20 w-full bg-black text-white flex md:justify-around items-center px-60 fixed z-20`,
-	leftMenu: `flex gap-3`,
+	wrapper: `h-20 w-full bg-black text-white flex md:justify-evenly lg:justify-evenly items-center px-60 fixed z-20`,
+	leftMenu: `flex gap-3 mr-12`,
 	logo: `text-3xl text-white flex cursor-pointer mr-16`,
-	menuItem: `text-lg text-white font-medium flex items-center mx-4 cursor-pointer`,
-	rightMenu: `flex gap-3 items-center`,
+	menuItem: `text-lg text-white font-medium flex items-center mx-4 cursor-pointer md:mr-10`,
+	rightMenu: `flex gap-3 items-center lg:ml-0`,
 	userImageContainer: `mr-2`,
 	userImage: `h-10 w-10 mr-4 rounded-full p-px object-cover cursor-pointer`,
 	loginButton: `flex items-center cursor-pointer rounded-full hover:bg-[#333333] px-4 py-1`,

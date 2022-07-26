@@ -3,7 +3,7 @@ import ItemsContainer from './ItemsContainer';
 
 const Footer = () => {
 	return (
-		<footer className="bg-gray-900 text-white">
+		<footer className="bg-gray-900 text-white lg:w-full md:w-[1250px]">
 			<div className="md:flex md:justify-between md:items-center sm:px-12 px-4 bg-[#6d706e19] py-7"></div>
 			<ItemsContainer />
 			<div
