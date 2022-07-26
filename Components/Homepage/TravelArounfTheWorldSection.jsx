@@ -4,7 +4,7 @@ import imgGirlPhone from '../../temp/womanWithPhone_03.png';
 
 const TravelArounfTheWorldSection = () => {
 	const style = {
-		container: `max-h-[300px] mt-[5rem] mb-[3rem]`,
+		container: `max-h-[300px] mt-[5rem] mb-[3rem] w-[1200px]`,
 		gridLayout: `grid grid-cols-2`,
 		box1SideWays: `h-[350px] m-auto`,
 		box2SideWays: `m-auto`,

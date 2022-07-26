@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutusReimagineOurLifeComponent = () => {
 	const style = {
-		reimagineLifeSection: `text-start`,
+		reimagineLifeSection: `text-start md:w-[1300px]`,
 		headerInsideReimagineLife: `text-[35px] mb-[20px] leading-10`,
 		paraInsideReimagineLife: `text-16px leading-6 w-[60%]`,
 		insideBr: 'block mg-[10px]',

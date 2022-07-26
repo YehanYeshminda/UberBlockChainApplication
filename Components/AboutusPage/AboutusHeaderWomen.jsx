@@ -4,7 +4,7 @@ import AboutusHeaderImg from '../../temp/AboutusHeader.jpeg';
 
 const AboutusHeaderWomen = () => {
 	const style = {
-		imgHeaderWrapper: `relative center text-white m-auto md:w-[1250px] lg:w-full sm:w-full`,
+		imgHeaderWrapper: `relative center text-white m-auto lg:w-full md:w-[1250px]`,
 		containerImg: 'h-[600px]',
 		letterBottomLeft: `absolute bottom-[50px] left-[260px] text-[55px]`,
 	};
