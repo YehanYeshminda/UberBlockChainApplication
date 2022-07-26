@@ -2,7 +2,7 @@ import React from 'react';
 
 const TopHeader = () => {
 	const style = {
-		headerMain: `grid grid-cols-2 mt-[80px]`,
+		headerMain: `grid grid-cols-2 mt-[80px] sm:mx-auto`,
 		boxOne: `h-500 w-500`,
 		textInside: `mt-[300px] text-start text-[56px] pl-[100px]`,
 		insideBr: 'block mg-[10px]',

@@ -1,6 +1,7 @@
 import React from 'react';
 import privacyImg from '../../temp/privacy.jpg';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 const SafetyPersonalDetails = () => {
 	const style = {
@@ -37,11 +38,21 @@ const SafetyPersonalDetails = () => {
 				</div>
 			</div>
 
-			<div className={style.boxTwo}>
+			<motion.div
+				initial="hidden"
+				whileInView="visible"
+				viewport={{ once: true }}
+				transition={{ duration: 0.6 }}
+				variants={{
+					visible: { opacity: 1, scale: 1 },
+					hidden: { opacity: 0, scale: 0 },
+				}}
+				className={style.boxTwo}
+			>
 				<div className={style.ImageStylingSet}>
 					<Image src={privacyImg} />
 				</div>
-			</div>
+			</motion.div>
 		</div>
 	);
 };

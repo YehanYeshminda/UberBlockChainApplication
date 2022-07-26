@@ -1,6 +1,7 @@
 import React from 'react';
 import PhonecallImg from '../../temp/phonecall.jpg';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 const SafetyTechnologySafety = () => {
 	const style = {
@@ -17,11 +18,21 @@ const SafetyTechnologySafety = () => {
 
 	return (
 		<div className={style.gridSectionSet}>
-			<div className={style.boxTwo}>
+			<motion.div
+				initial="hidden"
+				whileInView="visible"
+				viewport={{ once: true }}
+				transition={{ duration: 0.6 }}
+				variants={{
+					visible: { opacity: 1, scale: 1 },
+					hidden: { opacity: 0, scale: 0 },
+				}}
+				className={style.boxTwo}
+			>
 				<div className={style.ImageStylingSet}>
 					<Image src={PhonecallImg} />
 				</div>
-			</div>
+			</motion.div>
 			<div className={style.boxOne}>
 				<div className={style.textInsideGrid}>
 					<h1 className={style.headerText}>
