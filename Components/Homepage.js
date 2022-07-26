@@ -68,11 +68,20 @@ const Homepage = () => {
 								<motion.div className={style.progressBar} style={{ scaleX }} />
 								<TopHeader />
 								<div>
-									<div>
+									<motion.div
+										initial="hidden"
+										whileInView="visible"
+										viewport={{ once: true }}
+										transition={{ duration: 0.6 }}
+										variants={{
+											visible: { opacity: 1, scale: 1 },
+											hidden: { opacity: 0, scale: 0 },
+										}}
+									>
 										<h1 className={style.subHeader}>Why Use the Uber App?</h1>
 
 										<GridSectionOne />
-									</div>
+									</motion.div>
 
 									<h1 className={style.subHeaderV2}>Your Safety Matters</h1>
 									<p className={style.safetyHeaderPara}>

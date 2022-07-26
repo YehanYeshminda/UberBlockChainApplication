@@ -10,6 +10,7 @@ import Image from 'next/image';
 import { BsFillPeopleFill } from 'react-icons/bs';
 import { BiShapeCircle } from 'react-icons/bi';
 import { FaBullhorn } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const AboutusGridCompDouble = () => {
 	const style = {
@@ -28,7 +29,17 @@ const AboutusGridCompDouble = () => {
 
 	return (
 		<div>
-			<div className={style.gridContentDoubleContent}>
+			<motion.div
+				initial="hidden"
+				whileInView="visible"
+				viewport={{ once: true }}
+				transition={{ duration: 0.6 }}
+				variants={{
+					visible: { opacity: 1, scale: 1 },
+					hidden: { opacity: 0, scale: 0 },
+				}}
+				className={style.gridContentDoubleContent}
+			>
 				<Image src={SustainabilityPicture} alt="Uber images" />
 				<div>
 					<div className={style.headerH2}>
@@ -48,9 +59,19 @@ const AboutusGridCompDouble = () => {
 						</p>
 					</div>
 				</div>
-			</div>
+			</motion.div>
 
-			<div className={style.gridContentDoubleContent}>
+			<motion.div
+				initial="hidden"
+				whileInView="visible"
+				viewport={{ once: true }}
+				transition={{ duration: 0.6 }}
+				variants={{
+					visible: { opacity: 1, scale: 1 },
+					hidden: { opacity: 0, scale: 0 },
+				}}
+				className={style.gridContentDoubleContent}
+			>
 				<Image src={roadPicture} alt="Uber images" />
 				<div>
 					<div className={style.headerH2}>
@@ -66,9 +87,19 @@ const AboutusGridCompDouble = () => {
 						</p>
 					</div>
 				</div>
-			</div>
+			</motion.div>
 
-			<div className={style.gridContentDoubleContent}>
+			<motion.div
+				initial="hidden"
+				whileInView="visible"
+				viewport={{ once: true }}
+				transition={{ duration: 0.6 }}
+				variants={{
+					visible: { opacity: 1, scale: 1 },
+					hidden: { opacity: 0, scale: 0 },
+				}}
+				className={style.gridContentDoubleContent}
+			>
 				<div>
 					<div className={style.headerInsideDoubleGrid}>
 						<h2>Your safety drives us</h2>
@@ -84,15 +115,25 @@ const AboutusGridCompDouble = () => {
 					</div>
 				</div>
 				<Image src={backgroundShield} alt="Uber images" />
-			</div>
+			</motion.div>
 
 			<h1 className={style.subHeaderSet}>Company info</h1>
 
 			<div className={style.companyGridSection}>
 				<div>
-					<div className={style.imgContainer}>
+					<motion.div
+						initial="hidden"
+						whileInView="visible"
+						viewport={{ once: true }}
+						transition={{ duration: 0.6 }}
+						variants={{
+							visible: { opacity: 1, scale: 1 },
+							hidden: { opacity: 0, scale: 0 },
+						}}
+						className={style.imgContainer}
+					>
 						<Image src={girlAndBoy} alt="" />
-					</div>
+					</motion.div>
 					<h2 className={style.boxSetH2}>Whos driving Uber</h2>
 					<p className={style.boxSetP}>
 						We’re building a culture within Uber that emphasizes doing the right
@@ -101,9 +142,19 @@ const AboutusGridCompDouble = () => {
 					</p>
 				</div>
 				<div>
-					<div className={style.imgContainer}>
+					<motion.div
+						initial="hidden"
+						whileInView="visible"
+						viewport={{ once: true }}
+						transition={{ duration: 0.6 }}
+						variants={{
+							visible: { opacity: 1, scale: 1 },
+							hidden: { opacity: 0, scale: 0 },
+						}}
+						className={style.imgContainer}
+					>
 						<Image src={threePeople} alt="" />
-					</div>
+					</motion.div>
 					<h2 className={style.boxSetH2}>Getting diversity right</h2>
 					<p className={style.boxSetP}>
 						It’s our goal to create a workplace that is inclusive and reflects
@@ -115,9 +166,19 @@ const AboutusGridCompDouble = () => {
 					</p>
 				</div>
 				<div>
-					<div className={style.imgContainer}>
+					<motion.div
+						initial="hidden"
+						whileInView="visible"
+						viewport={{ once: true }}
+						transition={{ duration: 0.6 }}
+						variants={{
+							visible: { opacity: 1, scale: 1 },
+							hidden: { opacity: 0, scale: 0 },
+						}}
+						className={style.imgContainer}
+					>
 						<Image src={personClass} alt="" />
-					</div>
+					</motion.div>
 					<h2 className={style.boxSetH2}>Acting with integrity</h2>
 					<p className={style.boxSetP}>
 						Ubers Ethics & Compliance Program Charter outlines our commitment to

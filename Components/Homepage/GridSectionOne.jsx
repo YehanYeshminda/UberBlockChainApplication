@@ -22,19 +22,9 @@ const GridSectionOne = () => {
 
 	return (
 		<div className={style.gridOptionsSet}>
-			<motion.div
-				initial="hidden"
-				whileInView="visible"
-				viewport={{ once: true }}
-				transition={{ duration: 0.6 }}
-				variants={{
-					visible: { opacity: 1, scale: 1 },
-					hidden: { opacity: 0, scale: 0 },
-				}}
-				className={style.imgInside}
-			>
+			<div className={style.imgInside}>
 				<Image src={imgPara} />
-			</motion.div>
+			</div>
 			<div className={style.boxHeightOptions}>
 				<div className={style.fontAwesomeIconTemplateColor}>
 					<FontAwesomeIcon icon={faClock} />
