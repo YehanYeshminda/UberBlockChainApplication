@@ -57,6 +57,7 @@ const Navbar = () => {
 						src={avatar}
 						width={40}
 						height={40}
+						alt="none"
 					/>
 				</div>
 				{currentAccount ? (

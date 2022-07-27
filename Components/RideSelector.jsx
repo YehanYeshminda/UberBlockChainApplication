@@ -6,34 +6,35 @@ import uberX from '../assets/Rides/uberx.png';
 import uberXl from '../assets/Rides/uberxl.png';
 import uberXSelect from '../assets/Rides/uberxSelect.png';
 import ethLogo from '../assets/Logos/eth-logo.png';
+import { useEffect, useState } from 'react';
 
-const carList = [
-	{
-		service: 'UberX',
-		imgUrl: uberX,
-		multiplier: 1,
-	},
-	{
-		service: 'UberXL',
-		imgUrl: uberXl,
-		multiplier: 1.5,
-	},
-	{
-		service: 'Black',
-		imgUrl: uberBlack,
-		multiplier: 2,
-	},
-	{
-		service: 'Comfort',
-		imgUrl: uberXSelect,
-		multiplier: 1.2,
-	},
-	{
-		service: 'Black SUV',
-		imgUrl: uberBlackSuv,
-		multiplier: 2.8,
-	},
-];
+// const carList = [
+// 	{
+// 		service: 'UberX',
+// 		imgUrl: uberX,
+// 		multiplier: 1,
+// 	},
+// 	{
+// 		service: 'UberXL',
+// 		imgUrl: uberXl,
+// 		multiplier: 1.5,
+// 	},
+// 	{
+// 		service: 'Black',
+// 		imgUrl: uberBlack,
+// 		multiplier: 2,
+// 	},
+// 	{
+// 		service: 'Comfort',
+// 		imgUrl: uberXSelect,
+// 		multiplier: 1.2,
+// 	},
+// 	{
+// 		service: 'Black SUV',
+// 		imgUrl: uberBlackSuv,
+// 		multiplier: 2.8,
+// 	},
+// ];
 
 const basePrice = 1542;
 
@@ -52,6 +53,24 @@ const style = {
 };
 
 const RideSelector = () => {
+	const [carList, setCarList] = useState([]);
+
+	useEffect(() => {
+		(async () => {
+			try {
+				const response = await fetch('/api/db/getRideTypes');
+
+				const data = await response.json();
+				setCarList(data.data);
+				setSelectedRide(data.data[0]);
+			} catch (error) {
+				console.error(error);
+			}
+		})();
+	}, []);
+
+	// console.log(carList);
+
 	return (
 		<div className={style.wrapper}>
 			<div className={style.title}>Choose a ride or Swipe up for more!</div>
@@ -59,11 +78,10 @@ const RideSelector = () => {
 				{carList.map((car, index) => (
 					<div key={index} className={style.car}>
 						<Image
-							src={car.imgUrl}
+							src={car.iconUrl}
 							className={style.carImage}
 							height={50}
 							width={50}
-							alt="car"
 						/>
 						<div className={style.carDetails}>
 							<div className={style.service}>{car.service}</div>
@@ -71,7 +89,7 @@ const RideSelector = () => {
 						</div>
 						<div className={style.priceContainer}>
 							<div className={style.price}>
-								{((basePrice / 10 ** 5) * car.multiplier).toFixed(5)}
+								{((basePrice / 10 ** 5) * car.priceMultiplier).toFixed(5)}
 							</div>
 						</div>
 						<Image src={ethLogo} height={25} width={40} />
