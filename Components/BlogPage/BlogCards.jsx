@@ -2,6 +2,7 @@ import React from 'react';
 import Phone from '../../temp/Phone.jpg';
 import Image from 'next/image';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 const BlogCards = ({ blogs }) => {
 	const styles = {
@@ -11,7 +12,15 @@ const BlogCards = ({ blogs }) => {
 	return (
 		<div className={styles.gridSection}>
 			{blogs.map((ele) => (
-				<div
+				<motion.div
+					initial="hidden"
+					whileInView="visible"
+					viewport={{ once: true }}
+					transition={{ duration: 0.2 }}
+					variants={{
+						visible: { opacity: 1, scale: 1 },
+						hidden: { opacity: 0, scale: 0 },
+					}}
 					className="max-w-sm rounded overflow-hidden shadow-lg hover:shadow-2xl ease-in-out duration-500"
 					key={ele.id}
 				>
@@ -33,7 +42,7 @@ const BlogCards = ({ blogs }) => {
 							{ele.postedTime}
 						</span>
 					</div>
-				</div>
+				</motion.div>
 			))}
 		</div>
 	);

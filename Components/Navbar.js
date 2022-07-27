@@ -7,7 +7,7 @@ const style = {
 	wrapper: `h-20 w-full bg-black text-white flex md:justify-evenly lg:justify-evenly items-center px-60 fixed z-20`,
 	leftMenu: `flex gap-3 mr-12`,
 	logo: `text-3xl text-white flex cursor-pointer mr-16`,
-	menuItem: `text-lg text-white font-medium flex items-center mx-4 cursor-pointer md:mr-10`,
+	menuItem: `text-lg text-white font-medium flex items-center mx-4 cursor-pointer md:mr-10 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-black-500 duration-300 hover:underline hover:underline-offset-4`,
 	rightMenu: `flex gap-3 items-center lg:ml-0`,
 	userImageContainer: `mr-2`,
 	userImage: `h-10 w-10 mr-4 rounded-full p-px object-cover cursor-pointer`,

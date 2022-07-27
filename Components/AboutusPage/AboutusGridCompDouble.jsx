@@ -215,7 +215,7 @@ const AboutusGridCompDouble = () => {
 				</div>
 				<div>
 					<div className={style.iconContainer}>
-						<BiShapeCircle />
+						<BiShapeCircle className="motion-safe:animate-spin" />
 					</div>
 					<h2 className={style.boxSetH2}>Investor relations</h2>
 					<p className={style.boxSetP}>

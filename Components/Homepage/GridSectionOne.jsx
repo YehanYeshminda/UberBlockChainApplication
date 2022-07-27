@@ -12,7 +12,7 @@ import {
 const GridSectionOne = () => {
 	const style = {
 		gridOptionsSet: `grid grid-cols-3 grid-flow-row auto-rows-max w-[1200px]`,
-		imgInside: `col-span-3`,
+		imgInside: `col-span-3 bounce-short`,
 		boxHeightOptions: `mb-10 p-10`,
 		fontAwesomeIconTemplateColor: `text-[30px] pb-[10px]`,
 		fontAwesomeIconTemplateColorSet: `text-[30px] pb-[10px] text-blue-600`,
@@ -27,7 +27,10 @@ const GridSectionOne = () => {
 			</div>
 			<div className={style.boxHeightOptions}>
 				<div className={style.fontAwesomeIconTemplateColor}>
-					<FontAwesomeIcon icon={faClock} />
+					<FontAwesomeIcon
+						icon={faClock}
+						className="motion-safe:animate-spin"
+					/>
 				</div>
 				<p className={style.textInsideSuggestions}>Rides On Demand</p>
 				<p className={style.textInsideSuggestionsPara}>

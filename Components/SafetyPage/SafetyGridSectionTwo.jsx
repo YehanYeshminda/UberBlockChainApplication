@@ -15,7 +15,7 @@ const SafetyGridSectionTwo = () => {
 		<div className={style.gridSectionSet}>
 			<div className={style.boxOneSection}>
 				<div className={style.fontIconSet}>
-					<FaHeadSideMask />
+					<FaHeadSideMask className="motion-safe:animate-bounce" />
 				</div>
 				<h3 className={style.headerInsideGrid}>Masks are no longer required</h3>
 				<p>
@@ -35,7 +35,7 @@ const SafetyGridSectionTwo = () => {
 			</div>
 			<div className={style.boxTwoSection}>
 				<div className={style.fontIconSet}>
-					<RiWheelchairFill />
+					<RiWheelchairFill className="motion-safe:animate-bounce" />
 				</div>
 				<h3 className={style.headerInsideGrid}>
 					Updating our no-front-seat policy
@@ -48,7 +48,7 @@ const SafetyGridSectionTwo = () => {
 			</div>
 			<div className={style.boxThreeSection}>
 				<div className={style.fontIconSet}>
-					<AiFillMail />
+					<AiFillMail className="motion-safe:animate-bounce" />
 				</div>
 				<h3 className={style.headerInsideGrid}>
 					Thank you for helping take care of one another
