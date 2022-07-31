@@ -1,27 +1,18 @@
 import React from 'react';
+import GridSectionSetPartTwo from '../Components/Homepage/GridSectionSetPartTwo';
 import Navbar from '../Components/Navbar';
-import BlogsTopText from '../Components/BlogPage/BlogsTopText';
-import PersonRidingCarSection from '../Components/BlogPage/PersonRidingCarSection';
-import BlogCards from '../Components/BlogPage/BlogCards';
+import AppsSections from '../Components/OfferingsPage/AppsSections';
+import EarnMoneySection from '../Components/OfferingsPage/EarnMoneySection';
+import FoodDeliveryOnDemand from '../Components/OfferingsPage/FoodDeliveryOnDemand';
+import Header from '../Components/OfferingsPage/Header';
+import HelpingBusiness from '../Components/OfferingsPage/HelpingBusiness';
+import IconSectionGrid from '../Components/OfferingsPage/IconSectionGrid';
+import MovingCitysForward from '../Components/OfferingsPage/MovingCitysForward';
+import RideOptionUber from '../Components/OfferingsPage/RideOptionUber';
 import Footer from '../Components/Footer';
-import { useState, useEffect } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
 
-const Blogs = () => {
-	// getting the blogs from the json server
-	const [blogs, setBlogs] = useState(null);
-	const [pendingRequest, setPendingRequest] = useState(true);
-
-	useEffect(() => {
-		fetch('http://localhost:8000/blogs')
-			.then((result) => result.json())
-			.then((data) => {
-				setBlogs(data);
-				setPendingRequest(false);
-			})
-			.catch((err) => console.log(err));
-	}, []);
-
+const Offerings = () => {
 	const { scrollYProgress } = useScroll();
 
 	const scaleX = useSpring(scrollYProgress, {
@@ -75,18 +66,24 @@ const Blogs = () => {
 					<motion.div variants={title}>
 						<motion.div variants={inputs}>
 							<motion.div className={style.progressBar} style={{ scaleX }} />
-							<BlogsTopText />
-							<PersonRidingCarSection />
-							{pendingRequest && <div>Loading Data....</div>}
-							{/* if blogs are available only then output else wait */}
-							{blogs && <BlogCards blogs={blogs} />}
-							<Footer />
+							<div className="w-[1200px] min-w-[1200px] m-auto">
+								<Header />
+								<AppsSections />
+								<IconSectionGrid />
+								<RideOptionUber />
+								<GridSectionSetPartTwo />
+								<FoodDeliveryOnDemand />
+								<EarnMoneySection />
+								<MovingCitysForward />
+								<HelpingBusiness />
+							</div>
 						</motion.div>
 					</motion.div>
 				</motion.div>
 			</motion.section>
+			<Footer />
 		</div>
 	);
 };
 
-export default Blogs;
+export default Offerings;

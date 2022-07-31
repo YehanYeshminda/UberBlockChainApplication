@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 const TabbedComponent = () => {
 	const style = {
-		container: `flex flex-col relative w-[1200px] max-h-[400px] break-all mt-[1rem] mb-[3rem]`,
+		container: `flex flex-col relative w-[1200px] break-all mt-[1rem] mb-[3rem] h-[60vh]`,
 		blockTabs: `flex`,
 		tabs: `p-4 text-center w-6/12 cursor-pointer box-content relative bg-red`,
 		innerGridSet: `grid grid-cols-3`,

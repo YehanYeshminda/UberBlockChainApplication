@@ -15,7 +15,7 @@ import { motion, useScroll, useSpring } from 'framer-motion';
 const Safety = () => {
 	const style = {
 		wrapper: 'max-w-[1200px] m-auto w-[1200px]',
-		progressBar: `fixed left-0 right-0 h-2 bg-black origin-[0%] z-50 mt-[80px]`,
+		progressBar: `fixed left-0 right-0 h-2 bg-black origin-[0%] z-50 mt-20`,
 	};
 
 	const { scrollYProgress } = useScroll();

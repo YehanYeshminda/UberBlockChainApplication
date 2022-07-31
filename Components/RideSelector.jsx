@@ -8,34 +8,6 @@ import uberXSelect from '../assets/Rides/uberxSelect.png';
 import ethLogo from '../assets/Logos/eth-logo.png';
 import { useEffect, useState } from 'react';
 
-// const carList = [
-// 	{
-// 		service: 'UberX',
-// 		imgUrl: uberX,
-// 		multiplier: 1,
-// 	},
-// 	{
-// 		service: 'UberXL',
-// 		imgUrl: uberXl,
-// 		multiplier: 1.5,
-// 	},
-// 	{
-// 		service: 'Black',
-// 		imgUrl: uberBlack,
-// 		multiplier: 2,
-// 	},
-// 	{
-// 		service: 'Comfort',
-// 		imgUrl: uberXSelect,
-// 		multiplier: 1.2,
-// 	},
-// 	{
-// 		service: 'Black SUV',
-// 		imgUrl: uberBlackSuv,
-// 		multiplier: 2.8,
-// 	},
-// ];
-
 const basePrice = 1542;
 
 const style = {
@@ -82,6 +54,7 @@ const RideSelector = () => {
 							className={style.carImage}
 							height={50}
 							width={50}
+							alt={'car'}
 						/>
 						<div className={style.carDetails}>
 							<div className={style.service}>{car.service}</div>
@@ -92,7 +65,7 @@ const RideSelector = () => {
 								{((basePrice / 10 ** 5) * car.priceMultiplier).toFixed(5)}
 							</div>
 						</div>
-						<Image src={ethLogo} height={25} width={40} />
+						<Image src={ethLogo} height={25} width={40} alt={'car'} />
 					</div>
 				))}
 			</div>

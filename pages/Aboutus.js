@@ -11,7 +11,7 @@ const style = {
 	wrapper: `h-screen max-w-[1200px] flex flex-col`,
 	main: `h-full w-screen flex-1 z-10`,
 	setWrapperSize: `max-w-[1200px] m-auto mt-[100px]`,
-	progressBar: `fixed left-0 right-0 h-2 bg-black origin-[0%] z-50 mt-[80px]`,
+	progressBar: `fixed left-0 right-0 h-2 bg-black origin-[0%] z-50 mt-20`,
 };
 
 const Aboutus = () => {

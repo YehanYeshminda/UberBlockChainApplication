@@ -11,7 +11,7 @@ import {
 
 const GridSectionOne = () => {
 	const style = {
-		gridOptionsSet: `grid grid-cols-3 grid-flow-row auto-rows-max w-[1200px]`,
+		gridOptionsSet: `grid grid-cols-3 grid-flow-row auto-rows-max w-[1200px] h-[90vh]`,
 		imgInside: `col-span-3 bounce-short`,
 		boxHeightOptions: `mb-10 p-10`,
 		fontAwesomeIconTemplateColor: `text-[30px] pb-[10px]`,
