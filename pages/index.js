@@ -1,12 +1,9 @@
 import Navbar from '../Components/Navbar';
-import Map from '../Components/Map';
-import LocationSelector from '../Components/LocationSelector';
 import Homepage from '../Components/Homepage';
 import Footer from '../Components/Footer';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 const style = {
-	wrapper: `h-screen w-screen flex flex-col`,
+	wrapper: `h-full w-full flex flex-col bg-white`,
 	main: `h-full w-screen flex-1 z-10`,
 	mapContainer: `flex-1 w-full h-full`,
 	// rideRequestContainer: `h-full w-[400px] ml-[1rem] py-[3rem] absolute top-0 left-0 flex flex-col justify-end z-20`,
