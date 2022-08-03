@@ -6,7 +6,7 @@ import TravelArounfTheWorldSection from './Homepage/TravelArounfTheWorldSection'
 import TopHeader from './Homepage/TopHeader';
 import GridSectionOne from './Homepage/GridSectionOne';
 import GridSectionSetPartTwo from './Homepage/GridSectionSetPartTwo';
-import { motion, useScroll, useSpring } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const style = {
 	wrapper: `my-0 mx-auto max-w-[1200px]`,
@@ -16,14 +16,6 @@ const style = {
 };
 
 const Homepage = () => {
-	const { scrollYProgress } = useScroll();
-
-	const scaleX = useSpring(scrollYProgress, {
-		stiffness: 100,
-		damping: 30,
-		restDelta: 0.001,
-	});
-
 	const content = {
 		animate: {
 			transition: { staggerChildren: 0.1 },
