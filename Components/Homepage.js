@@ -13,7 +13,6 @@ const style = {
 	subHeader: `text-[45px] pb-[20px] mt-[10px]`,
 	subHeaderV2: `text-[45px] pb-[20px] mt-[10px]`,
 	safetyHeaderPara: 'ml-[10px]',
-	progressBar: `fixed left-0 right-0 h-2 bg-black origin-[0%] z-50`,
 };
 
 const Homepage = () => {
@@ -65,7 +64,6 @@ const Homepage = () => {
 					<motion.div variants={title}>
 						<motion.div variants={inputs}>
 							<div className={style.wrapper}>
-								<motion.div className={style.progressBar} style={{ scaleX }} />
 								<TopHeader />
 								<div>
 									<motion.div
