@@ -9,6 +9,11 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
 
 .tabs {
     padding: 15px;

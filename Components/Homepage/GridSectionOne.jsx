@@ -10,52 +10,48 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 const GridSectionOne = () => {
-	const style = {
-		gridOptionsSet: `grid grid-cols-3 grid-flow-row auto-rows-max w-[1200px] h-[90vh]`,
-		imgInside: `col-span-3 bounce-short`,
-		boxHeightOptions: `mb-10 p-10`,
-		fontAwesomeIconTemplateColor: `text-[30px] pb-[10px]`,
-		fontAwesomeIconTemplateColorSet: `text-[30px] pb-[10px] text-blue-600`,
-		textInsideSuggestions: `text-[25px]`,
-		textInsideSuggestionsPara: `text-[17px]`,
-	};
-
 	return (
-		<div className={style.gridOptionsSet}>
-			<div className={style.imgInside}>
-				<Image src={imgPara} />
-			</div>
-			<div className={style.boxHeightOptions}>
-				<div className={style.fontAwesomeIconTemplateColor}>
-					<FontAwesomeIcon
-						icon={faClock}
-						className="motion-safe:animate-spin"
-					/>
+		<div className="max-w-7xl md:h-[80vh]">
+			<h1 className="sm:text-center md:text-left md:ml-0 text-2xl mt-2.5 mb-2 sm md:text-5xl md:pb-5 md:mt-2.5">
+				Why Use the Uber App?
+			</h1>
+			<div className="grid grid-cols-3 md:grid-cols-3 grid-flow-row auto-rows-max">
+				<div className="col-span-3 bounce-short">
+					<Image src={imgPara} />
 				</div>
-				<p className={style.textInsideSuggestions}>Rides On Demand</p>
-				<p className={style.textInsideSuggestionsPara}>
-					{' '}
-					Request a ride at any time and on any day of the year.
-				</p>
 			</div>
-			<div className={style.boxHeightOptions}>
-				<div className={style.fontAwesomeIconTemplateColor}>
-					<FontAwesomeIcon icon={faMoneyBill1} />
+			<div className="grid sm:grid-cols-1 md:grid md:grid-cols-3 sm:text-center">
+				<div className="p-4 md:mb-10 md:p-10">
+					<div className="text-2xl md:text-3xl md:pb-2.5">
+						<FontAwesomeIcon
+							icon={faClock}
+							className="motion-safe:animate-spin"
+						/>
+					</div>
+					<p className="text-base md:text-25">Rides On Demand</p>
+					<p className="text-xs md:text-lg">
+						Request a ride at any time and on any day of the year.
+					</p>
 				</div>
-				<p className={style.textInsideSuggestions}>Budget-friendly options</p>
-				<p className={style.textInsideSuggestionsPara}>
-					Compare prices on every kind of ride, from daily commutes to special
-					evenings out.
-				</p>
-			</div>
-			<div className={style.boxHeightOptions}>
-				<div className={style.fontAwesomeIconTemplateColor}>
-					<FontAwesomeIcon icon={faMap} />
+				<div className="p-4 md:mb-10 md:p-10">
+					<div className="text-2xl md:text-3xl md:pb-2.5">
+						<FontAwesomeIcon icon={faMoneyBill1} />
+					</div>
+					<p className="text-base md:text-25">Budget-friendly options</p>
+					<p className="text-xs md:text-lg">
+						Compare prices on every kind of ride, from daily commutes to special
+						evenings out.
+					</p>
 				</div>
-				<p className={style.textInsideSuggestions}>An easy way to get around</p>
-				<p className={style.textInsideSuggestionsPara}>
-					Tap and let your driver take you where you want to go.
-				</p>
+				<div className="p-4 md:mb-10 md:p-10">
+					<div className="text-2xl md:text-3xl md:pb-2.5">
+						<FontAwesomeIcon icon={faMap} />
+					</div>
+					<p className="text-base md:text-25">An easy way to get around</p>
+					<p className="text-xs md:text-lg">
+						Tap and let your driver take you where you want to go.
+					</p>
+				</div>
 			</div>
 		</div>
 	);

@@ -61,6 +61,7 @@ const BlogDetails = ({ blogs }) => {
 	return (
 		<div>
 			<Navbar />
+			<motion.div className={styles.progressBar} style={{ scaleX }} />
 			<motion.section
 				exit={{ opacity: 0 }}
 				class="text-gray-700 body-font relative"
@@ -69,7 +70,6 @@ const BlogDetails = ({ blogs }) => {
 					<motion.div variants={title}>
 						<motion.div variants={inputs}>
 							<div className={styles.titleWrapper}>
-								<motion.div className={styles.progressBar} style={{ scaleX }} />
 								<div className={styles.titleContainer}>{blogs.title}</div>
 								<div className={styles.titlePostedOn}>
 									Posted On : {blogs.postedTime}
