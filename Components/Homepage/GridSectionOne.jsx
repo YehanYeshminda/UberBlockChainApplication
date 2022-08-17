@@ -11,7 +11,7 @@ import {
 
 const GridSectionOne = () => {
 	return (
-		<div className="max-w-7xl md:h-[80vh]">
+		<div className="max-w-7xl sm:h-[80vh] md:h-[80vh]">
 			<h1 className="sm:text-center md:text-left md:ml-0 text-2xl mt-2.5 mb-2 sm md:text-5xl md:pb-5 md:mt-2.5">
 				Why Use the Uber App?
 			</h1>

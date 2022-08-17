@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 const TabbedComponent = () => {
 	const style = {
@@ -50,7 +51,10 @@ const TabbedComponent = () => {
 					<div className="grid grid-cols-1 md:grid-cols-3">
 						<div className="hover:bg-slate-200 md:p-3 sm:p-3 hover:transition hover:duration-500 hover:ease-in-out text-center">
 							<div className="ml-10">
-								<img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_437,h_246/f_auto,q_auto/products/carousel/UberX.png" />
+								<motion.img
+									whileHover={{ scale: 1.2 }}
+									src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_437,h_246/f_auto,q_auto/products/carousel/UberX.png"
+								/>
 							</div>
 							<div className="flex justify-center items-center font-semibold md:text-base sm:text-sm">
 								Zip
@@ -61,7 +65,8 @@ const TabbedComponent = () => {
 						</div>
 						<div className="hover:bg-slate-200 md:p-3 sm:p-3 hover:transition hover:duration-500 hover:ease-in-out text-center">
 							<div className="ml-10">
-								<img
+								<motion.img
+									whileHover={{ scale: 1.2 }}
 									src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_429,h_241/f_auto,q_auto/products/carousel/Moto.png"
 									alt=""
 								/>
@@ -75,7 +80,8 @@ const TabbedComponent = () => {
 						</div>
 						<div className="hover:bg-slate-200 md:p-3 sm:p-3 hover:transition hover:duration-500 hover:ease-in-out text-center">
 							<div className="ml-10">
-								<img
+								<motion.img
+									whileHover={{ scale: 1.2 }}
 									src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_437,h_246/f_auto,q_auto/products/carousel/UberX.png"
 									alt=""
 								/>
@@ -96,7 +102,10 @@ const TabbedComponent = () => {
 					<div className="grid grid-cols-1 md:grid-cols-3">
 						<div className="hover:bg-slate-200 md:p-3 sm:p-3 hover:transition hover:duration-500 hover:ease-in-out text-center">
 							<div className="ml-10">
-								<img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_429,h_241/f_auto,q_auto/products/carousel/Moto.png" />
+								<motion.img
+									whileHover={{ scale: 1.2 }}
+									src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_429,h_241/f_auto,q_auto/products/carousel/Moto.png"
+								/>
 							</div>
 							<div className="flex justify-center items-center font-semibold md:text-base sm:text-sm">
 								XL Intercity
@@ -107,7 +116,8 @@ const TabbedComponent = () => {
 						</div>
 						<div className="hover:bg-slate-200 md:p-3 sm:p-3 hover:transition hover:duration-500 hover:ease-in-out text-center">
 							<div className="ml-10">
-								<img
+								<motion.img
+									whileHover={{ scale: 1.2 }}
 									src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_437,h_246/f_auto,q_auto/products/carousel/UberX.png"
 									alt=""
 								/>
@@ -121,7 +131,8 @@ const TabbedComponent = () => {
 						</div>
 						<div className="hover:bg-slate-200 md:p-3 sm:p-3 hover:transition hover:duration-500 hover:ease-in-out text-center">
 							<div className="ml-10">
-								<img
+								<motion.img
+									whileHover={{ scale: 1.2 }}
 									src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_437,h_246/f_auto,q_auto/products/carousel/UberX.png"
 									alt=""
 								/>

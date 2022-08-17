@@ -2,7 +2,7 @@ import React from 'react';
 
 const TopHeader = () => {
 	return (
-		<div className="sm:mt-10 flex items-center justify-between  md:grid md:grid-cols-2 md:mt-10 md:max-w-7xl md:h-screen">
+		<div className="sm:mt-10 sm:h-[45vh] flex items-center justify-between  md:grid md:grid-cols-2 md:mt-10 md:max-w-7xl md:h-screen">
 			<div className="w-[500px] h-[250px] md:w-[500px] md:h-[500px]">
 				<div className="mt-20 text-2xl text-center leading-tight md:text-left md:mt-72 md:text-6xl md:pl-[100px] md:leading-snug">
 					Always the Ride You<span className="block mg-[10px]"> want</span>

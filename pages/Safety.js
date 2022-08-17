@@ -1,7 +1,7 @@
 import React from 'react';
 import SafetyGridSection from '../Components/SafetyPage/SafetyGridSection';
 import SafetyGridSectionTwo from '../Components/SafetyPage/SafetyGridSectionTwo';
-import Navbar from '../Components/Navbar';
+import Navbar from '../Components/Nav';
 import SafectyGridSectionInfo from '../Components/SafetyPage/SafectyGridSectionInfo';
 import SafetyEmergencyHelpInfo from '../Components/SafetyPage/SafetyEmergencyHelpInfo';
 import SafetyTechnologySafety from '../Components/SafetyPage/SafetyTechnologySafety';
@@ -11,10 +11,11 @@ import SafetyPersonalDetails from '../Components/SafetyPage/SafetyPersonalDetail
 import SafetyTextBelowSetSafety from '../Components/SafetyPage/SafetyTextBelowSetSafety';
 import Footer from '../Components/Footer';
 import { motion, useScroll, useSpring } from 'framer-motion';
+import safetyData from '../data/safetyData';
 
 const Safety = () => {
 	const style = {
-		wrapper: 'max-w-[1200px] m-auto w-[1200px]',
+		wrapper: 'max-w-7xl m-auto',
 		progressBar: `fixed left-0 right-0 h-2 bg-black origin-[0%] z-50 mt-20`,
 	};
 
@@ -56,6 +57,8 @@ const Safety = () => {
 		},
 	};
 
+	console.log(safetyData);
+
 	return (
 		<div>
 			<Navbar />
@@ -67,16 +70,16 @@ const Safety = () => {
 					<motion.div variants={title}>
 						<motion.div variants={inputs}>
 							<div className={style.wrapper}>
-								<motion.div className={style.progressBar} style={{ scaleX }} />
 								<SafetyGridSection />
 								<SafetyGridSectionTwo />
-								<SafectyGridSectionInfo />
-								<SafetyEmergencyHelpInfo />
-								<SafetyTechnologySafety />
-								<SafetyInsuranceHelpInfo />
-								<SafetyReportIssue />
-								<SafetyPersonalDetails />
-								<SafetyTextBelowSetSafety />
+								{/* <SafectyGridSectionInfo /> */}
+
+								{/* <SafetyEmergencyHelpInfo />  */}
+								{/* <SafetyTechnologySafety /> */}
+								{/* <SafetyInsuranceHelpInfo /> */}
+								{/* <SafetyReportIssue /> */}
+								{/* <SafetyPersonalDetails /> */}
+								{/* <SafetyTextBelowSetSafety /> */}
 							</div>
 							<Footer />
 						</motion.div>
