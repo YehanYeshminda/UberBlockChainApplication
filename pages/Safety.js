@@ -3,19 +3,14 @@ import SafetyGridSection from '../Components/SafetyPage/SafetyGridSection';
 import SafetyGridSectionTwo from '../Components/SafetyPage/SafetyGridSectionTwo';
 import Navbar from '../Components/Nav';
 import SafectyGridSectionInfo from '../Components/SafetyPage/SafectyGridSectionInfo';
-import SafetyEmergencyHelpInfo from '../Components/SafetyPage/SafetyEmergencyHelpInfo';
-import SafetyTechnologySafety from '../Components/SafetyPage/SafetyTechnologySafety';
-import SafetyInsuranceHelpInfo from '../Components/SafetyPage/SafetyInsuranceHelpInfo';
-import SafetyReportIssue from '../Components/SafetyPage/SafetyReportIssue';
-import SafetyPersonalDetails from '../Components/SafetyPage/SafetyPersonalDetails';
 import SafetyTextBelowSetSafety from '../Components/SafetyPage/SafetyTextBelowSetSafety';
 import Footer from '../Components/Footer';
 import { motion, useScroll, useSpring } from 'framer-motion';
-import safetyData from '../data/safetyData';
+import { safetyDataLeft, safetyDataRight } from '../data/safetyData';
 
 const Safety = () => {
 	const style = {
-		wrapper: 'max-w-7xl m-auto',
+		wrapper: 'max-w-7xl mx-auto',
 		progressBar: `fixed left-0 right-0 h-2 bg-black origin-[0%] z-50 mt-20`,
 	};
 
@@ -57,7 +52,7 @@ const Safety = () => {
 		},
 	};
 
-	console.log(safetyData);
+	console.log(safetyDataLeft, safetyDataRight);
 
 	return (
 		<div>
@@ -72,14 +67,12 @@ const Safety = () => {
 							<div className={style.wrapper}>
 								<SafetyGridSection />
 								<SafetyGridSectionTwo />
-								{/* <SafectyGridSectionInfo /> */}
 
-								{/* <SafetyEmergencyHelpInfo />  */}
-								{/* <SafetyTechnologySafety /> */}
-								{/* <SafetyInsuranceHelpInfo /> */}
-								{/* <SafetyReportIssue /> */}
-								{/* <SafetyPersonalDetails /> */}
-								{/* <SafetyTextBelowSetSafety /> */}
+								{safetyDataLeft &&
+									safetyDataLeft.map((ele) => (
+										<SafectyGridSectionInfo data={ele} key={ele.id} />
+									))}
+								<SafetyTextBelowSetSafety />
 							</div>
 							<Footer />
 						</motion.div>
