@@ -1,6 +1,6 @@
 import React from 'react';
 import GridSectionSetPartTwo from '../Components/Homepage/GridSectionSetPartTwo';
-import Navbar from '../Components/Navbar';
+import Navbar from '../Components/Nav';
 import AppsSections from '../Components/OfferingsPage/AppsSections';
 import EarnMoneySection from '../Components/OfferingsPage/EarnMoneySection';
 import FoodDeliveryOnDemand from '../Components/OfferingsPage/FoodDeliveryOnDemand';
@@ -65,8 +65,7 @@ const Offerings = () => {
 				<motion.div variants={content} animate="animate" initial="initial">
 					<motion.div variants={title}>
 						<motion.div variants={inputs}>
-							<motion.div className={style.progressBar} style={{ scaleX }} />
-							<div className="w-[1200px] min-w-[1200px] m-auto">
+							<div className="max-w-7xl mx-auto">
 								<Header />
 								<AppsSections />
 								<IconSectionGrid />

@@ -1,14 +1,11 @@
-import React from 'react';
-import Navbar from '../Navbar';
-
 const Header = () => {
 	return (
-		<div className="mb-20 h-[60vh]">
+		<div className="sm:mb-16 md:mb-20 md:h-[60vh]">
 			<div>
-				<div className="pt-[250px]  text-6xl font-medium">
+				<div className="sm:pt-32 sm:text-3xl sm:text-center md:text-left md:pt-60 sm:font-medium  md:text-6xl md:font-medium">
 					Uber’s technology offerings
 				</div>
-				<div className="mt-7 tracking-wide text-1xl">
+				<div className="sm:mt-5 sm:text-center md:text-left md:mt-7 md:tracking-wide md:text-1xl">
 					Changing how people can request rides and get from point A to point B
 					is just the beginning.
 				</div>

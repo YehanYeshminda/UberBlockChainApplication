@@ -6,26 +6,28 @@ import { motion } from 'framer-motion';
 
 const MovingCitysForward = () => {
 	return (
-		<div className="h-[90vh]">
-			<div className="text-5xl mb-10">Moving cities forward, together</div>
-			<div className="grid grid-cols-2">
-				<div className="">
+		<div className="md:h-[90vh] sm:mt-8 md:mt-0">
+			<div className="sm:text-2xl sm:mb-4 sm:text-center md:text-5xl md:mb-10 md:text-left">
+				Moving cities forward, together
+			</div>
+			<div className="grid sm:grid-cols-1 md:grid-cols-2 sm:gap-y-5 md:gap-y-0">
+				<div className="sm:flex sm:items-center sm:justify-center sm:flex-col md:grid md:items-start md:justify-start">
 					<motion.div
 						initial="hidden"
 						whileInView="visible"
 						viewport={{ once: true }}
-						transition={{ duration: 0.6 }}
+						transition={{ duration: 1 }}
 						variants={{
-							visible: { opacity: 1, scale: 1 },
-							hidden: { opacity: 0, scale: 0 },
+							visible: { opacity: 1 },
+							hidden: { opacity: 0 },
 						}}
 					>
 						<Image src={uberEatsPic} width={550} height={350} alt="ubereats" />
 					</motion.div>
-					<div className="text-2xl mt-3 mb-3">
+					<div className="text-2xl mt-3 mb-3 sm:text-center md:text-left">
 						Providing access to care for those in need
 					</div>
-					<div className="text-1xl w-[550px]">
+					<div className="sm:text-base sm:w-full sm:text-center md:w-550 md:text-left sm:mx-2 md:mx-0">
 						We’ve partnered with healthcare organizations to provide their
 						members and patients with access to care by offering them flexible
 						ride-scheduling options. Healthcare professionals can schedule rides
@@ -33,23 +35,23 @@ const MovingCitysForward = () => {
 						all from a single dashboard.
 					</div>
 				</div>
-				<div className="">
+				<div className="sm:flex sm:items-center sm:justify-center sm:flex-col md:grid md:items-start md:justify-start sm:mt-5 md:mt-0">
 					<motion.div
 						initial="hidden"
 						whileInView="visible"
 						viewport={{ once: true }}
-						transition={{ duration: 0.6 }}
+						transition={{ duration: 1 }}
 						variants={{
-							visible: { opacity: 1, scale: 1 },
-							hidden: { opacity: 0, scale: 0 },
+							visible: { opacity: 1 },
+							hidden: { opacity: 0 },
 						}}
 					>
 						<Image src={uberEatsPic2} width={550} height={350} alt="ubereats" />
 					</motion.div>
-					<div className="text-2xl mt-3 mb-3">
+					<div className="text-2xl md:mb-1 sm:text-center md:text-left">
 						Helping to improve public transportation for all
 					</div>
-					<div className="text-1xl w-[550px]">
+					<div className="sm:text-base sm:w-full sm:text-center md:w-550 md:text-left sm:mx-2 md:mx-0">
 						Uber is committed to helping cities around the world make public
 						transportation more accessible, equitable, and efficient.
 					</div>

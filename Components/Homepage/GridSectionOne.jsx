@@ -11,8 +11,8 @@ import {
 
 const GridSectionOne = () => {
 	return (
-		<div className="max-w-7xl sm:h-[80vh] md:h-[80vh]">
-			<h1 className="sm:text-center md:text-left md:ml-0 text-2xl mt-2.5 mb-2 sm md:text-5xl md:pb-5 md:mt-2.5">
+		<div className="max-w-7xl sm:h-500 md:h-screen">
+			<h1 className="sm:text-center md:text-left md:ml-0 text-2xl sm:mt-20 md:mt-20 mb-2 sm md:text-5xl md:pb-5">
 				Why Use the Uber App?
 			</h1>
 			<div className="grid grid-cols-3 md:grid-cols-3 grid-flow-row auto-rows-max">

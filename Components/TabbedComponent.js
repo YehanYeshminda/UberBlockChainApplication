@@ -20,7 +20,7 @@ const TabbedComponent = () => {
 	};
 
 	return (
-		<div className="flex flex-col relative max-w-7xl break-all mt-[1rem] mb-[3rem] sm:h-[110vh] md:h-[60vh] sm:mt-44 md:mt-0">
+		<div className="flex flex-col relative max-w-7xl break-all mt-[1rem] mb-[3rem] md:h-[60vh] md:mt-0">
 			<div className="flex">
 				<button
 					className={
