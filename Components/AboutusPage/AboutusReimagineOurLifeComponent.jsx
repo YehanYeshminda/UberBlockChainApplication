@@ -1,22 +1,14 @@
 import React from 'react';
 
 const AboutusReimagineOurLifeComponent = () => {
-	const style = {
-		reimagineLifeSection: `text-start md:w-[1300px]`,
-		headerInsideReimagineLife: `text-[35px] mb-[20px] leading-10`,
-		paraInsideReimagineLife: `text-16px leading-6 w-[60%]`,
-		insideBr: 'block mg-[10px]',
-		contentWrapper: `m-auto w-[1200px]`,
-	};
-
 	return (
-		<div className={style.contentWrapper}>
-			<div className={style.reimagineLifeSection}>
-				<h2 className={style.headerInsideReimagineLife}>
+		<div className="m-auto max-w-7xl w-full">
+			<div className="sm:flex sm:justify-center sm:items-center sm:flex-col sm:text=center    md:flex md:flex-col md:justify-start md:items-start md:text-start md:w-full">
+				<h2 className="sm:text-xl sm:text-center sm:font-semibold sm:mb-2 md:font-normal md:text-4xl md:text-left md:mb-5 leading-10">
 					We reimagine the way the world moves for{' '}
-					<span className={style.insideBr}>the better</span>
+					<span className="md:block">the better</span>
 				</h2>
-				<p className={style.paraInsideReimagineLife}>
+				<p className="sm:text-center sm:text-sm md:text-left md:text-base leading-6 md:w-[60%]">
 					Movement is what we power. It’s our lifeblood. It runs through our
 					veins. It’s what gets us out of bed each morning. It pushes us to
 					constantly reimagine how we can move better. For you. For all the

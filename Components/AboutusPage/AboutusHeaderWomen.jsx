@@ -3,22 +3,17 @@ import Image from 'next/image';
 import AboutusHeaderImg from '../../temp/AboutusHeader.jpeg';
 
 const AboutusHeaderWomen = () => {
-	const style = {
-		imgHeaderWrapper: `relative center text-white m-auto lg:w-full md:w-[1250px]`,
-		containerImg: 'h-[600px]',
-		letterBottomLeft: `absolute bottom-[50px] left-[260px] text-[55px]`,
-	};
-
 	return (
-		<div className={style.imgHeaderWrapper}>
+		<div className="sm:mt-10 md:mt-0 relative text-white sm:w-full md:w-7xl">
 			<Image
 				src={AboutusHeaderImg}
 				priority={true}
-				className={style.containerImg}
+				className="object-cover"
 				alt="Header Image"
-				height={1100}
 			/>
-			<h1 className={style.letterBottomLeft}>About us</h1>
+			<h1 className="absolute sm:bottom-7 sm:left-8 sm:text-4xl md:bottom-12 md:left-64 md:text-6xl">
+				About us
+			</h1>
 		</div>
 	);
 };
