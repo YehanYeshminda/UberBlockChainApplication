@@ -3,23 +3,14 @@ import Image from 'next/image';
 import globalImage from '../../temp/globe_background-01.png';
 
 const AboutusContainerLastSectionImageSet = () => {
-	const style = {
-		containerLastSection: `grid grid-cols-2 bg-[#f6f6f6] max-h-[600px] m-auto md:w-[1240px] lg:w-full`,
-		textBoxSection: `ml-[200px] mt-[50px] text-[50px]`,
-		imageBoxSection: ``,
-		imageSetter: `h-[600px]`,
-		imageSet: `bg-cover`,
-		insideBr: 'block mg-[10px]',
-	};
-
 	return (
-		<div className={style.containerLastSection}>
-			<div className={style.textBoxSection}>
+		<div className="grid md:grid-cols-2 sm:grid-cols-1 bg-[#f6f6f6] max-h-[600px] m-auto md:max-w-full w-full sm:mt-14 md:mt-0">
+			<div className="flex justify-center items-center sm:text-center md:text-left md:text-6xl sm:text-3xl">
 				<h2>
-					Come reimagine <span className={style.insideBr}> with us </span>
+					Come reimagine <span className="block"> with us </span>
 				</h2>
 			</div>
-			<div className={style.imageSet}>
+			<div className="bg-cover">
 				<Image src={globalImage} alt="last section image" />
 			</div>
 		</div>

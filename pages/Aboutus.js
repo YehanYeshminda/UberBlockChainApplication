@@ -64,7 +64,7 @@ const Aboutus = () => {
 										<AboutusGridCompDouble />
 									</div>
 								</div>
-								{/* <AboutusContainerLastSectionImageSet /> */}
+								<AboutusContainerLastSectionImageSet />
 								<Footer />
 							</div>
 						</motion.div>
