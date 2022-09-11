@@ -2,7 +2,7 @@
 const nextConfig = {
 	reactStrictMode: false,
 	images: {
-		domains: ['cdn.sanity.io'],
+		domains: ['cdn.sanity.io', 'uberblogapi.10upcdn.com'],
 	},
 };
 

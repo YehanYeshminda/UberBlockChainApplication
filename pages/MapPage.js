@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from '../Components/Footer';
 import Map from '../Components/Map';
-import Navbar from '../Components/Navbar';
+import Navbar from '../Components/Nav';
 import LocationSelector from '../Components/LocationSelector';
 import Confirm from '../Components/Confirm';
 

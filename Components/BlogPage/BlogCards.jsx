@@ -6,11 +6,11 @@ import { motion } from 'framer-motion';
 
 const BlogCards = ({ blogs }) => {
 	const styles = {
-		gridSection: `grid grid-cols-3 gap-[50px] mt-[100px] ml-[100px] mr-[100px] mb-[100px]`,
+		gridSection: ``,
 	};
 
 	return (
-		<div className={styles.gridSection}>
+		<div className="grid sm:grid-cols-1 md:grid-cols-3 gap-[50px] mt-[100px] md:ml-[100px] ml-14 md:mr-[100px] mr-14 mb-[100px]">
 			{blogs.map((ele) => (
 				<motion.div
 					initial="hidden"
@@ -26,11 +26,11 @@ const BlogCards = ({ blogs }) => {
 				>
 					<img className="w-full" src={ele.url} alt="Sunset in the mountains" />
 					<div className="px-6 py-4">
-						<div className="font-bold text-xl mb-2 text-center">
+						<div className="md:font-bold font-normal md:text-xl text-base mb-2 text-center">
 							{ele.title}
 						</div>
 					</div>
-					<button className="bg-blue-500 hover:bg-blue-400 text-white font-bold ml-[50px] py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded w-[300px] hover:animate-pulse">
+					<button className="bg-blue-500 hover:bg-blue-400 text-white font-bold md:ml-[50px] py-2 px-4 ml-4 border-b-4 border-blue-700 hover:border-blue-500 rounded w-56 md:w-[300px] hover:animate-pulse">
 						<Link href={`/Blogs/${ele.id}`}>
 							<p>Read more...</p>
 						</Link>

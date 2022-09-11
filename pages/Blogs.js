@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../Components/Navbar';
+import Navbar from '../Components/Nav';
 import BlogsTopText from '../Components/BlogPage/BlogsTopText';
 import PersonRidingCarSection from '../Components/BlogPage/PersonRidingCarSection';
 import BlogCards from '../Components/BlogPage/BlogCards';
@@ -60,10 +60,6 @@ const Blogs = () => {
 		},
 	};
 
-	const style = {
-		progressBar: `fixed left-0 right-0 h-2 bg-black origin-[0%] z-50 mt-20`,
-	};
-
 	return (
 		<div>
 			<Navbar />
@@ -74,7 +70,6 @@ const Blogs = () => {
 				<motion.div variants={content} animate="animate" initial="initial">
 					<motion.div variants={title}>
 						<motion.div variants={inputs}>
-							<motion.div className={style.progressBar} style={{ scaleX }} />
 							<BlogsTopText />
 							<PersonRidingCarSection />
 							{pendingRequest && <div>Loading Data....</div>}
