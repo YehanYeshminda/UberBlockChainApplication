@@ -1,10 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import uberBlack from '../assets/Rides/uberblack.png';
-import uberBlackSuv from '../assets/Rides/uberblacksuv.png';
-import uberX from '../assets/Rides/uberx.png';
-import uberXl from '../assets/Rides/uberxl.png';
-import uberXSelect from '../assets/Rides/uberxSelect.png';
 import ethLogo from '../assets/Logos/eth-logo.png';
 import { useEffect, useState } from 'react';
 
