@@ -8,9 +8,10 @@ export const UberProvider = ({ children }) => {
 	const [pickupCoordinates, setPickupCoordinates] = useState();
 	const [dropoffCoordinates, setDropoffCoordinates] = useState();
 
-	const createLocationCoordinatesPromise = (locationName, locationType) => {
-		if (!pickupCoordinates || !dropoffCoordinates) return;
+	console.log(pickup);
+	console.log(dropoff);
 
+	const createLocationCoordinatesPromise = (locationName, locationType) => {
 		return new Promise(async (resolve, reject) => {
 			try {
 				const response = await fetch('api/db/getLocationCoordinates', {
@@ -24,6 +25,8 @@ export const UberProvider = ({ children }) => {
 				});
 
 				const data = await response.json();
+
+				console.log(data);
 
 				if (data.message === 'success') {
 					switch (locationType) {
