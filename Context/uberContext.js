@@ -9,6 +9,8 @@ export const UberProvider = ({ children }) => {
 	const [dropoffCoordinates, setDropoffCoordinates] = useState();
 
 	const createLocationCoordinatesPromise = (locationName, locationType) => {
+		if (!pickupCoordinates || !dropoffCoordinates) return;
+
 		return new Promise(async (resolve, reject) => {
 			try {
 				const response = await fetch('api/db/getLocationCoordinates', {
