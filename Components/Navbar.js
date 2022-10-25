@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import avatar from '../temp/avatar.jpg';
 import { BsPerson } from 'react-icons/bs';
+import {UberContext} from "../Context/uberContext";
+import {useContext} from "react";
 import Link from 'next/link';
 
 const style = {
@@ -15,9 +17,9 @@ const style = {
 	loginText: `ml-2`,
 };
 
-const currentAccount = '0xa5a5a53eEb97a26A1Ef08CCc68739ad65A0fa86c';
-
 const Navbar = () => {
+
+	connectWallet()
 	return (
 		<div className={style.wrapper}>
 			<div className={style.leftMenu}>
@@ -69,7 +71,7 @@ const Navbar = () => {
 				) : (
 					<div className={style.loginButton}>
 						<BsPerson />
-						<span className={style.loginText}>Log in</span>
+						<span className={style.loginText} onClick={() => connectWallet()}>Log in</span>
 					</div>
 				)}
 			</div>

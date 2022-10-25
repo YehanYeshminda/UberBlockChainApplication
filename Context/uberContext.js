@@ -1,4 +1,5 @@
 import { createContext, useState, useEffect } from 'react';
+import { faker } from '@faker-js/faker';
 
 export const UberContext = createContext();
 
@@ -7,9 +8,70 @@ export const UberProvider = ({ children }) => {
 	const [dropoff, setDropoff] = useState('');
 	const [pickupCoordinates, setPickupCoordinates] = useState();
 	const [dropoffCoordinates, setDropoffCoordinates] = useState();
+	const [currentAccount, setCurrentAccount] = useState();
+	const [currentUser, setCurrentUser] = useState([]);
 
-	console.log(pickup);
-	console.log(dropoff);
+	let metamask;
+
+	if (typeof window !== 'undefined') {
+		metamask = window.ethereum; // meta will equal to this
+		console.log(metamask);
+	}
+
+	useEffect(() => {
+		checkIfWalletIsConnected();
+	}, []);
+
+	const checkIfWalletIsConnected = async () => {
+		if (!window.ethereum) return;
+		try {
+			const addressArray = await window.ethereum.request({
+				method: 'eth_accounts',
+			});
+
+			if (addressArray.length > 0) {
+				setCurrentAccount(addressArray[0]);
+				requestToCreateUserOnSanity(addressArray[0]);
+			}
+		} catch (error) {
+			console.error(error);
+		}
+	};
+
+	const connectWallet = async () => {
+		if (!window.ethereum) return;
+		console.log('clicked');
+		try {
+			const addressArray = await window.ethereum.request({
+				method: 'eth_requestAccounts',
+			});
+
+			if (addressArray.length > 0) {
+				setCurrentAccount(addressArray[0]);
+				requestToCreateUserOnSanity(addressArray[0]);
+			}
+		} catch (error) {
+			console.error(error);
+		}
+	};
+
+	const requestToCreateUserOnSanity = async (address) => {
+		if (!window.ethereum) return;
+		try {
+			await fetch('/api/db/createUser', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify({
+					userWalletAddress: address,
+					name: faker.name.fullName(),
+				}),
+			});
+		} catch (error) {
+			console.error(error);
+		}
+	};
 
 	const createLocationCoordinatesPromise = (locationName, locationType) => {
 		return new Promise(async (resolve, reject) => {
@@ -26,7 +88,7 @@ export const UberProvider = ({ children }) => {
 
 				const data = await response.json();
 
-				console.log(data);
+				// console.log(data);
 
 				if (data.message === 'success') {
 					switch (locationType) {
@@ -70,6 +132,8 @@ export const UberProvider = ({ children }) => {
 				setPickupCoordinates,
 				dropoffCoordinates,
 				setDropoffCoordinates,
+				connectWallet,
+				currentAccount,
 			}}
 		>
 			{children}

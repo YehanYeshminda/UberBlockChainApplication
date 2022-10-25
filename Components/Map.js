@@ -21,7 +21,7 @@ const Map = () => {
 			// center: [81.434, 7.724],
 			// zoom: 3,
 			center: [-99.29011, 39.39172],
-			zoom: 9, // starting zoom
+			zoom: 6, // starting zoom
 		});
 
 		if (pickupCoordinates) {
