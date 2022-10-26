@@ -22,6 +22,11 @@ export const UberProvider = ({ children }) => {
 		checkIfWalletIsConnected();
 	}, []);
 
+	useEffect(() => {
+		if (!currentAccount) return
+		requestToGetCurrentUsersInfo(currentAccount)
+	}, [currentAccount])
+
 	const checkIfWalletIsConnected = async () => {
 		if (!window.ethereum) return;
 		try {
@@ -72,6 +77,18 @@ export const UberProvider = ({ children }) => {
 			console.error(error);
 		}
 	};
+
+	const requestToGetCurrentUsersInfo = async walletAddress => {
+		try {
+			const response = await fetch(
+				`/api/db/getUserInfo?walletAddress=${walletAddress}`,
+			)
+			const data = await response.json()
+			setCurrentUser(data.data)
+		} catch (error) {
+			console.error(error)
+		}
+	}
 
 	const createLocationCoordinatesPromise = (locationName, locationType) => {
 		return new Promise(async (resolve, reject) => {
@@ -134,6 +151,7 @@ export const UberProvider = ({ children }) => {
 				setDropoffCoordinates,
 				connectWallet,
 				currentAccount,
+				currentUser,
 			}}
 		>
 			{children}

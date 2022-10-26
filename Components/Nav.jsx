@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import avatar from '../temp/avatar.jpg';
-import { BsPerson } from 'react-icons/bs';
 import { MdMenu, MdOutlineClose, MdDirectionsCar } from 'react-icons/md';
 import {useContext, useState} from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
@@ -18,8 +17,9 @@ const Nav = () => {
 		restDelta: 0.001,
 	});
 
-	const {currentAccount, connectWallet} = useContext(UberContext)
+	const {currentAccount, connectWallet, currentUser} = useContext(UberContext)
 
+	// console.log(currentUser)
 	return (
 		<div className="shadow-md w-full fixed top-0 left-0 z-50">
 			<div className="md:flex bg-black py-4 md:px-10 px-7 items-center justify-between">
@@ -70,7 +70,7 @@ const Nav = () => {
 						</Link>
 					</li>
 					<li className="sm:text-xs md:flex md:ml-8 md:text-xl md:my-0 my-7">
-						{'Yehan Yeshminda'.split(' ')[0]}
+						{currentUser.name?.split(' ')[0]}
 					</li>
 					<li className="sm:text-xs md:flex md:ml-8 md:text-xl md:my-0 my-7">
 						<Image
