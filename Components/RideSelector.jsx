@@ -53,7 +53,7 @@ const RideSelector = () => {
 					<div key={index} className={`${selectedRide.service === car.service ? style.selectedCar : style.car}`}
 						 onClick={() => {
 							 setSelectedRide(car)
-							 setPrice(((basePrice / 10 ** 5) * car.priceMultiplier).toFixed(5))
+							 setPrice(((basePrice / 10 ** 5) * car.priceMultiplier).toFixed(7))
 						 }}>
 						<Image
 							src={car.iconUrl}
