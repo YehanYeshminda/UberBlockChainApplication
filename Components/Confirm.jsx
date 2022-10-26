@@ -1,5 +1,7 @@
 import React from 'react';
 import RideSelector from './RideSelector';
+import {UberContext} from "../Context/uberContext";
+import {useContext} from "react";
 
 const style = {
 	wrapper: `flex-1 h-full flex flex-col justify-between`,
@@ -9,7 +11,27 @@ const style = {
 };
 
 const Confirm = () => {
-	const storeTripDetails = async () => {};
+	const {currentAccount, pickup, dropoff, price, selectedRide} = useContext(UberContext);
+
+	const storeTripDetails = async (pickup, dropoff) => {
+		try {
+			await fetch('api/db/saveTrips', {
+				method: "POST",
+				headers : {
+					"Content-Type" : "application/json",
+				},
+				body: JSON.stringify({
+					pickupLocation : pickup,
+					dropoffLocation : dropoff,
+					userWalletAddress : currentAccount,
+					price: price,
+					selectedRide: selectedRide,
+				})
+			})
+		}catch (e) {
+			console.log(e)
+		}
+	};
 	return (
 		<div className={style.wrapper}>
 			<div className={style.rideSelectorContainer}>
@@ -17,7 +39,7 @@ const Confirm = () => {
 			</div>
 			<div className={style.confirmButtonContainer}>
 				<div className={style.confirmButtonContainer}>
-					<div className={style.confirmButton} onClick={() => {}}>
+					<div className={style.confirmButton} onClick={() => storeTripDetails(pickup, dropoff)}>
 						Confirm
 					</div>
 				</div>

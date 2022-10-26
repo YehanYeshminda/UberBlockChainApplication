@@ -10,6 +10,8 @@ export const UberProvider = ({ children }) => {
 	const [dropoffCoordinates, setDropoffCoordinates] = useState();
 	const [currentAccount, setCurrentAccount] = useState();
 	const [currentUser, setCurrentUser] = useState([]);
+	const [selectedRide, setSelectedRide] = useState([])
+	const [price, setPrice] = useState()
 
 	let metamask;
 
@@ -152,6 +154,10 @@ export const UberProvider = ({ children }) => {
 				connectWallet,
 				currentAccount,
 				currentUser,
+				price,
+				setPrice,
+				selectedRide,
+				setSelectedRide,
 			}}
 		>
 			{children}
