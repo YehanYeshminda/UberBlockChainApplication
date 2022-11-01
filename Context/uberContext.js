@@ -10,8 +10,8 @@ export const UberProvider = ({ children }) => {
 	const [dropoffCoordinates, setDropoffCoordinates] = useState();
 	const [currentAccount, setCurrentAccount] = useState();
 	const [currentUser, setCurrentUser] = useState([]);
-	const [selectedRide, setSelectedRide] = useState([])
-	const [price, setPrice] = useState()
+	const [selectedRide, setSelectedRide] = useState([]);
+	const [price, setPrice] = useState();
 
 	let metamask;
 
@@ -25,9 +25,9 @@ export const UberProvider = ({ children }) => {
 	}, []);
 
 	useEffect(() => {
-		if (!currentAccount) return
-		requestToGetCurrentUsersInfo(currentAccount)
-	}, [currentAccount])
+		if (!currentAccount) return;
+		requestToGetCurrentUsersInfo(currentAccount);
+	}, [currentAccount]);
 
 	const checkIfWalletIsConnected = async () => {
 		if (!window.ethereum) return;
@@ -80,17 +80,17 @@ export const UberProvider = ({ children }) => {
 		}
 	};
 
-	const requestToGetCurrentUsersInfo = async walletAddress => {
+	const requestToGetCurrentUsersInfo = async (walletAddress) => {
 		try {
 			const response = await fetch(
-				`/api/db/getUserInfo?walletAddress=${walletAddress}`,
-			)
-			const data = await response.json()
-			setCurrentUser(data.data)
+				`/api/db/getUserInfo?walletAddress=${walletAddress}`
+			);
+			const data = await response.json();
+			setCurrentUser(data.data);
 		} catch (error) {
-			console.error(error)
+			console.error(error);
 		}
-	}
+	};
 
 	const createLocationCoordinatesPromise = (locationName, locationType) => {
 		return new Promise(async (resolve, reject) => {
