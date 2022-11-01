@@ -2,6 +2,7 @@ import React from 'react';
 import RideSelector from './RideSelector';
 import { UberContext } from '../Context/uberContext';
 import { useContext } from 'react';
+import { ethers } from 'ethers';
 
 const style = {
 	wrapper: `flex-1 h-full flex flex-col justify-between`,
@@ -16,6 +17,7 @@ const Confirm = () => {
 		pickup,
 		dropoff,
 		price,
+		metamask,
 		selectedRide,
 		pickupCoordinates,
 		dropoffCoordinates,
@@ -35,6 +37,18 @@ const Confirm = () => {
 					price: price,
 					selectedRide: selectedRide,
 				}),
+			});
+
+			await metamask.request({
+				method: 'eth_sendTransaction',
+				params: [
+					{
+						from: currentAccount,
+						to: process.env.NEXT_PUBLIC_UBER_ADDRESS,
+						gas: '0x7EF40', // 520000 Gwei
+						value: ethers.utils.parseEther(price)._hex,
+					},
+				],
 			});
 		} catch (e) {
 			console.log(e);

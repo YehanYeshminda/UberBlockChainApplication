@@ -46,7 +46,7 @@ export const UberProvider = ({ children }) => {
 				});
 
 				const data = await response.json();
-				setBasePrice(Math.round(await data.data));
+				setBasePrice(2);
 			} catch (error) {
 				console.error(error);
 			}
@@ -179,6 +179,7 @@ export const UberProvider = ({ children }) => {
 				currentAccount,
 				currentUser,
 				price,
+				metamask,
 				setPrice,
 				selectedRide,
 				setSelectedRide,
