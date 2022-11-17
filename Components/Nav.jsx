@@ -2,9 +2,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import avatar from '../temp/avatar.jpg';
 import { MdMenu, MdOutlineClose, MdDirectionsCar } from 'react-icons/md';
-import {useContext, useState} from 'react';
+import { useContext, useState } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
-import {UberContext} from "../Context/uberContext";
+import { UberContext } from '../Context/uberContext';
 
 const Nav = () => {
 	const [open, setOpen] = useState(false);
@@ -17,7 +17,8 @@ const Nav = () => {
 		restDelta: 0.001,
 	});
 
-	const {currentAccount, connectWallet, currentUser} = useContext(UberContext)
+	const { currentAccount, connectWallet, currentUser } =
+		useContext(UberContext);
 
 	// console.log(currentUser)
 	return (
@@ -88,7 +89,10 @@ const Nav = () => {
 						</li>
 					) : (
 						<li className="flex sm:text-xs md:text-xl items-center my-7 md:my-0">
-							<button className="bg-white text-black py-2 px-6 rounded md:ml-8  hover:bg-gray-500 hover:text-white duration-500" onClick={() => connectWallet()}>
+							<button
+								className="bg-white text-black py-2 px-6 rounded md:ml-8  hover:bg-gray-500 hover:text-white duration-500"
+								onClick={() => connectWallet()}
+							>
 								Log in
 							</button>
 						</li>

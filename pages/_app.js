@@ -4,7 +4,7 @@ import { UberProvider } from '../Context/uberContext';
 function MyApp({ Component, pageProps }) {
 	return (
 		<UberProvider>
-			<Component {...pageProps} />;
+			<Component {...pageProps} />
 		</UberProvider>
 	);
 }

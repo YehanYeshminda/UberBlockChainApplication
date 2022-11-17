@@ -48,7 +48,7 @@ const RideSelector = () => {
 	console.log(basePrice);
 
 	return (
-		<div className={style.wrapper}>
+		<div className={style.wrapper} data-testid="rideSelector">
 			<div className={style.title}>Choose a ride or Swipe up for more!</div>
 			<div className={style.carList}>
 				{carList.map((car, index) => (

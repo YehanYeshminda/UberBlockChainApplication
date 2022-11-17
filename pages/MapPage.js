@@ -19,7 +19,7 @@ const mapPage = () => {
 			<Navbar />
 			<div className={style.main}>
 				<Map />
-				{/* <Footer /> */}
+				<Footer />
 			</div>
 			<div className={style.rideRequestContainer}>
 				<div className={style.rideRequest}>

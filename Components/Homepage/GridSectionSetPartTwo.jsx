@@ -8,7 +8,10 @@ import {
 
 const GridSectionSetPartTwo = () => {
 	return (
-		<div className="max-w-7xl h-auto sm:mt-0 md:mt-20">
+		<div
+			className="max-w-7xl h-auto sm:mt-0 md:mt-20"
+			data-testid="gridsection-2"
+		>
 			<h1 className="sm:text-center md:text-left md:ml-0 text-2xl mt-2.5 mb-2 sm md:text-5xl md:pb-5 md:mt-2.5">
 				Your Safety Matters
 			</h1>

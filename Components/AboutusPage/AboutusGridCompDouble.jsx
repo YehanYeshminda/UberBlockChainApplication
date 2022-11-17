@@ -14,7 +14,7 @@ import { motion } from 'framer-motion';
 
 const AboutusGridCompDouble = () => {
 	return (
-		<div>
+		<div data-testid="gridcomp-1">
 			{/* photos grid section */}
 			<motion.div
 				initial="hidden"
