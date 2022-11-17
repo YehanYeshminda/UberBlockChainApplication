@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutusReimagineOurLifeComponent = () => {
 	return (
-		<div className="m-auto max-w-7xl w-full">
+		<div className="m-auto max-w-7xl w-full" data-testid="aboutuslife-1">
 			<div className="sm:flex sm:justify-center sm:items-center sm:flex-col sm:text=center    md:flex md:flex-col md:justify-start md:items-start md:text-start md:w-full">
 				<h2 className="sm:text-xl sm:text-center sm:font-semibold sm:mb-2 md:font-normal md:text-4xl md:text-left md:mb-5 leading-10">
 					We reimagine the way the world moves for{' '}

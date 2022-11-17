@@ -6,7 +6,10 @@ import { motion } from 'framer-motion';
 
 const HelpingBusiness = () => {
 	return (
-		<div className="md:h-[90vh] sm:mt-8 md:mt-0">
+		<div
+			className="md:h-[90vh] sm:mt-8 md:mt-0"
+			data-testid="helpingBusinessSec-1"
+		>
 			<div className="sm:text-2xl sm:mb-4 sm:text-center md:text-5xl md:mb-10 md:text-left">
 				Moving cities forward, together
 			</div>

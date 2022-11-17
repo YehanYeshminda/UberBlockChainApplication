@@ -5,7 +5,10 @@ import { AiFillMail } from 'react-icons/ai';
 
 const SafetyGridSectionTwo = () => {
 	return (
-		<div className="grid sm:grid-cols-1 sm:text-center md:text-left md:grid-cols-3 gap-x-5 md:h-[70vh] sm:h-[170vh]">
+		<div
+			className="grid sm:grid-cols-1 sm:text-center md:text-left md:grid-cols-3 gap-x-5 md:h-[70vh] sm:h-[170vh]"
+			data-testid="safetyGridSection-1"
+		>
 			<div className="">
 				<div className="text-4xl md:text-5xl md:pb-5 sm:flex sm:items-center sm:justify-center md:items-start md:justify-start">
 					<FaHeadSideMask className="motion-safe:animate-bounce" />

@@ -2,7 +2,7 @@ import React from 'react';
 
 const AppsSections = () => {
 	return (
-		<div className="md:h-[45vh]">
+		<div className="md:h-[45vh]" data-testid="appsection-1">
 			<div className="sm:text-3xl sm:text-center sm:font-medium md:text-left md:text-5xl md:font-medium md:mb-7">
 				Uber apps, products, and other offerings
 			</div>

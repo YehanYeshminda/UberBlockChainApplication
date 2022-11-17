@@ -9,7 +9,7 @@ import TabbedComponent from '../TabbedComponent';
 
 const RideOptionUber = () => {
 	return (
-		<div className="md:h-[80vh]">
+		<div className="md:h-[80vh]" data-testid="rideOptionTest-1">
 			<div className="sm:text-3xl sm:text-center md:text-left sm:font-medium sm:mb-4 md:text-5xl md:mb-7 md:font-medium">
 				Ubers most popular ride options
 			</div>

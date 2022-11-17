@@ -46,6 +46,7 @@ export const UberProvider = ({ children }) => {
 				});
 
 				const data = await response.json();
+				// console.log(data.data);
 				setBasePrice(2);
 			} catch (error) {
 				console.error(error);

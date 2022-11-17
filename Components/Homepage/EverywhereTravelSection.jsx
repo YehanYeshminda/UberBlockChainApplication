@@ -3,7 +3,10 @@ import { motion } from 'framer-motion';
 
 const EverywhereTravelSection = () => {
 	return (
-		<div className="m-7 max-w-7xl md:h-[65vh] sm:h-[110vh]">
+		<div
+			className="m-7 max-w-7xl md:h-[65vh] sm:h-[110vh]"
+			data-testid="everywhere-travel-1"
+		>
 			<h1 className="sm:text-2xl sm:pb-3 sm:text-center md:text-left md:text-5xl md:pb-5 md:mt-2">
 				Everywhere that you travel
 			</h1>

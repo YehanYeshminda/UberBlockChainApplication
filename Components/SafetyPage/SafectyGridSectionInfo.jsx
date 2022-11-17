@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const SafectyGridSectionInfo = ({ data }) => {
 	return (
-		<div className="max-w-7xl">
+		<div className="max-w-7xl" data-testid="safetyGridSec-1">
 			{data.left ? (
 				<div className="grid sm:grid-cols-1 md:grid-cols-2 md:pt-[100px m-auto">
 					<motion.div
@@ -19,7 +19,7 @@ const SafectyGridSectionInfo = ({ data }) => {
 						}}
 					>
 						<div className="sm:w-full md:w-full">
-							<Image src={data.img} />
+							<Image src={data.img} width={550} height={350} />
 						</div>
 					</motion.div>
 					<div className="max-w-xl">
